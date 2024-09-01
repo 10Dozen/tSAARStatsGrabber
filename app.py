@@ -5,8 +5,8 @@ import zipfile
 import json
 import operator
 
-EXPORT_FILENAME = "AAR Stats 2024-07.txt"
-DATE_STARTS_WITH = '2024-07-'
+EXPORT_FILENAME = "AAR Stats 2024-08.txt"
+DATE_STARTS_WITH = '2024-08-'
 # AAR_BASE_DIR = r'G:\tS\aarDataGrabber\aars'
 AAR_BASE_DIR = r'D:\Github\aar\aars'
 
@@ -25,7 +25,19 @@ TERRAIN_CODENAME_TO_NAME = {
     'Woodland_ACR': {'name': 'Bystica'},
     'Altis': {'name': 'Altis'},
     'takistan': {'name': 'Takistan'},
+    'chernarus': {'name': 'Chernarus'},
+    'chernarus_summer': {'name': 'Chernarus (Summer)'},
     'Chernarus_winter': {'name': 'Chernarus (Winter)'},
+    'Tanoa': {'name': 'Tanoa'},
+    'ruha': {'name': 'Ruha'},
+    'Kunduz': {'name': 'Kunduz, Afghanistan'},
+    'Zargabad': {'name': 'Zargabad'},
+    'IslaPera': {'name': 'Isla Pera'},
+    'Farabad': {'name': 'Farabad'},
+    'intro': {'name': 'intro'},
+    'ProvingGrounds_PMC': {'name':'Proving Grounds'},
+    'Desert_E': {'name': 'Desert'},
+    'DYA': {'name': 'Diyala'}
 }
 
 EXPORTER = None
