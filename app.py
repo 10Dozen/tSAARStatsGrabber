@@ -15,8 +15,9 @@ TERRAIN_CODENAME_TO_NAME = {
     'WL_Rosche': {'name': 'Rosche, Germany'},
     'cain': {'name': 'Kolgujev (CWR)'},
     'cup_chernarus_A3': {'name': 'Chernarus 2020'},
-    'Malden': {'name': 'Malden'},
+    'Malden': {'name': 'Malden (2035)'},
     'VTF_Korsac': {'name': 'Korsac'},
+    'VTF_Korsac_Winter': {'name': 'Korsac (Winter)'},
     'MCN_Aliabad': {'name': 'Aliabad Region'},
     'tem_ihantalaw': {'name': 'Ihantala Winter'},
     'lingor3': {'name': 'Lingor Island'},
@@ -37,7 +38,10 @@ TERRAIN_CODENAME_TO_NAME = {
     'intro': {'name': 'intro'},
     'ProvingGrounds_PMC': {'name':'Proving Grounds'},
     'Desert_E': {'name': 'Desert'},
-    'DYA': {'name': 'Diyala'}
+    'DYA': {'name': 'Diyala'},
+    'Bootcamp_ACR': {'name': 'Bukovina'},
+    'Mountains_ACR': {'name': 'Takistan Mountains'},
+    'porto': {'name': 'Porto'}
 }
 
 EXPORTER = None
