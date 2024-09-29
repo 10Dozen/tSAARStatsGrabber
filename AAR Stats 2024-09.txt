@@ -1,0 +1,394 @@
+Overall data:
+  Total mission time: 114717 sec (1 day 7 h 51 min 57 sec)
+  Mission Average play time: 4249 sec (1 h 10 min 48 sec)
+  Number of unique players: 28
+  Max players in one mission: 20
+  Total players deployed: 602
+  Total muntion fired: 86273
+  Total AI killed: 2750
+  Abandoned/Killed vehicles: 482
+  Total player losses: 306
+  Avg survivability: 49.17%
+
+
+Missions (27):
+  CO22_September_3
+  CO29 Yard Quarrel
+  CO22 FB P2 Raid
+  CO34 BLACK MESA PART 1
+  CO13 Nutcracker
+  CO14 Bloody Dawn
+  CO35 Deadly Column
+  CO20 Hunt For Survivors
+  CO18 Close on Enemy
+  CO22 FB P3 Assault
+  CO18 Law and Order
+  CO22 Loco Express
+  CO7_Se_Acabo
+  CO29 Across the Border
+  CO18 Garage For Sale 1A
+  CO18 Hunter Being Hunted
+  CO20 Nasha Posadka
+  CO22 Surprise mfs!!
+  CO27 Metalurg 2A
+  CO29 Special Activity 2A
+  ItalCO20 Avanti
+  CO26 Save Korobochka 1A
+  CO10 Farmsteady
+  CO22 FB P4 Thunder Run
+  CO34_Khirurgiya
+  CO24 Snake Hunters
+  CO27 Assault on Myro
+
+
+Terrains (by Events):
+  Terrain              | Times   | %       | Playtime             | %      
+  ---                  | ---     | ---     | ---                  | ---    
+  Chernarus 2020       | 4       | 14.81%  | 3 h 33 min 55 sec    | 11.19% 
+  Farabad              | 3       | 11.11%  | 5 h 58 min 2 sec     | 18.73% 
+  Rosche, Germany      | 3       | 11.11%  | 3 h 48 min 20 sec    | 11.94% 
+  Korsac               | 3       | 11.11%  | 3 h 20 min 51 sec    | 10.50% 
+  Šumava               | 2       | 7.41%   | 2 h 57 min 31 sec    | 9.28%  
+  Takistan Mountains   | 2       | 7.41%   | 2 h 58 min 32 sec    | 9.34%  
+  Aliabad Region       | 2       | 7.41%   | 1 h 48 min 36 sec    | 5.68%  
+  Bukovina             | 1       | 3.70%   | 0 h 29 min 4 sec     | 1.52%  
+  Bystica              | 1       | 3.70%   | 1 h 37 min 0 sec     | 5.07%  
+  Chernarus            | 1       | 3.70%   | 0 h 49 min 44 sec    | 2.60%  
+  Isla Pera            | 1       | 3.70%   | 1 h 6 min 31 sec     | 3.48%  
+  Porto                | 1       | 3.70%   | 0 h 26 min 56 sec    | 1.41%  
+  Korsac (Winter)      | 1       | 3.70%   | 0 h 44 min 11 sec    | 2.31%  
+  Lingor Island        | 1       | 3.70%   | 1 h 44 min 42 sec    | 5.48%  
+  Kujari               | 1       | 3.70%   | 0 h 28 min 2 sec     | 1.47%  
+
+Terrains (by Playtime):
+  Terrain              | Times   | %       | Playtime             | %      
+  ---                  | ---     | ---     | ---                  | ---    
+  Farabad              | 3       | 11.11%  | 5 h 58 min 2 sec     | 18.73% 
+  Rosche, Germany      | 3       | 11.11%  | 3 h 48 min 20 sec    | 11.94% 
+  Chernarus 2020       | 4       | 14.81%  | 3 h 33 min 55 sec    | 11.19% 
+  Korsac               | 3       | 11.11%  | 3 h 20 min 51 sec    | 10.50% 
+  Takistan Mountains   | 2       | 7.41%   | 2 h 58 min 32 sec    | 9.34%  
+  Šumava               | 2       | 7.41%   | 2 h 57 min 31 sec    | 9.28%  
+  Aliabad Region       | 2       | 7.41%   | 1 h 48 min 36 sec    | 5.68%  
+  Lingor Island        | 1       | 3.70%   | 1 h 44 min 42 sec    | 5.48%  
+  Bystica              | 1       | 3.70%   | 1 h 37 min 0 sec     | 5.07%  
+  Isla Pera            | 1       | 3.70%   | 1 h 6 min 31 sec     | 3.48%  
+  Chernarus            | 1       | 3.70%   | 0 h 49 min 44 sec    | 2.60%  
+  Korsac (Winter)      | 1       | 3.70%   | 0 h 44 min 11 sec    | 2.31%  
+  Bukovina             | 1       | 3.70%   | 0 h 29 min 4 sec     | 1.52%  
+  Kujari               | 1       | 3.70%   | 0 h 28 min 2 sec     | 1.47%  
+  Porto                | 1       | 3.70%   | 0 h 26 min 56 sec    | 1.41%  
+
+
+
+Players (partaking, by Events visited):
+  Name                 | Events  | %       | Playtime             | %      
+  ---                  | ---     | ---     | ---                  | ---    
+  TUWONKA              | 27      | 100.00% | 1 day 7 h 51 min 57 sec | 100.00%
+  Twente               | 23      | 85.19%  | 1 day 3 h 52 min 50 sec | 87.49% 
+  Ka6aH                | 22      | 81.48%  | 1 day 2 h 19 min 42 sec | 82.62% 
+  chek1                | 22      | 81.48%  | 1 day 3 h 20 min 40 sec | 85.81% 
+  Smoker               | 22      | 81.48%  | 1 day 1 h 3 min 28 sec | 78.64% 
+  Galaxy               | 21      | 77.78%  | 1 day 2 h 1 min 31 sec | 81.67% 
+  Home                 | 21      | 77.78%  | 1 day 1 h 24 min 28 sec | 79.73% 
+  [HL]Prais777         | 20      | 74.07%  | 1 day 2 h 29 min 40 sec | 83.14% 
+  Osamich              | 19      | 70.37%  | 1 day 0 h 14 min 15 sec | 76.06% 
+  Venom_koket          | 19      | 70.37%  | 1 day 1 h 7 min 25 sec | 78.84% 
+  Михаил               | 17      | 62.96%  | 19 h 53 min 54 sec   | 62.44% 
+  Arsdor               | 17      | 62.96%  | 21 h 20 min 33 sec   | 66.98% 
+  Comrade              | 17      | 62.96%  | 21 h 25 min 1 sec    | 67.21% 
+  [SK]Stepaz           | 17      | 62.96%  | 20 h 46 min 56 sec   | 65.22% 
+  [JAT]BenZIn          | 14      | 51.85%  | 17 h 44 min 33 sec   | 55.68% 
+  Barich               | 12      | 44.44%  | 15 h 3 min 49 sec    | 47.27% 
+  Dushica              | 11      | 40.74%  | 14 h 43 min 10 sec   | 46.19% 
+  Реневал              | 10      | 37.04%  | 13 h 35 min 35 sec   | 42.66% 
+  Ulman                | 10      | 37.04%  | 13 h 4 min 27 sec    | 41.03% 
+  Papa Het             | 9       | 33.33%  | 10 h 19 min 47 sec   | 32.42% 
+  olegg                | 8       | 29.63%  | 9 h 1 min 44 sec     | 28.33% 
+  [ATF] Ulman          | 7       | 25.93%  | 9 h 18 min 39 sec    | 29.22% 
+  Rich                 | 5       | 18.52%  | 6 h 50 min 53 sec    | 21.49% 
+  10Dozen              | 3       | 11.11%  | 3 h 16 min 12 sec    | 10.26% 
+  SammySweet           | 2       | 7.41%   | 4 h 10 min 36 sec    | 13.11% 
+  Mr. Jazzy            | 2       | 7.41%   | 3 h 34 min 21 sec    | 11.21% 
+  Redid Stretch        | 2       | 7.41%   | 2 h 5 min 36 sec     | 6.57%  
+  FILISTIN             | 2       | 7.41%   | 2 h 5 min 36 sec     | 6.57%  
+
+Players (partaking, by Playtime):
+  Name                 | Events  | %       | Playtime             | %      
+  ---                  | ---     | ---     | ---                  | ---    
+  TUWONKA              | 27      | 100.00% | 1 day 7 h 51 min 57 sec | 100.00%
+  Twente               | 23      | 85.19%  | 1 day 3 h 52 min 50 sec | 87.49% 
+  chek1                | 22      | 81.48%  | 1 day 3 h 20 min 40 sec | 85.81% 
+  [HL]Prais777         | 20      | 74.07%  | 1 day 2 h 29 min 40 sec | 83.14% 
+  Ka6aH                | 22      | 81.48%  | 1 day 2 h 19 min 42 sec | 82.62% 
+  Galaxy               | 21      | 77.78%  | 1 day 2 h 1 min 31 sec | 81.67% 
+  Home                 | 21      | 77.78%  | 1 day 1 h 24 min 28 sec | 79.73% 
+  Venom_koket          | 19      | 70.37%  | 1 day 1 h 7 min 25 sec | 78.84% 
+  Smoker               | 22      | 81.48%  | 1 day 1 h 3 min 28 sec | 78.64% 
+  Osamich              | 19      | 70.37%  | 1 day 0 h 14 min 15 sec | 76.06% 
+  Comrade              | 17      | 62.96%  | 21 h 25 min 1 sec    | 67.21% 
+  Arsdor               | 17      | 62.96%  | 21 h 20 min 33 sec   | 66.98% 
+  [SK]Stepaz           | 17      | 62.96%  | 20 h 46 min 56 sec   | 65.22% 
+  Михаил               | 17      | 62.96%  | 19 h 53 min 54 sec   | 62.44% 
+  [JAT]BenZIn          | 14      | 51.85%  | 17 h 44 min 33 sec   | 55.68% 
+  Barich               | 12      | 44.44%  | 15 h 3 min 49 sec    | 47.27% 
+  Dushica              | 11      | 40.74%  | 14 h 43 min 10 sec   | 46.19% 
+  Реневал              | 10      | 37.04%  | 13 h 35 min 35 sec   | 42.66% 
+  Ulman                | 10      | 37.04%  | 13 h 4 min 27 sec    | 41.03% 
+  Papa Het             | 9       | 33.33%  | 10 h 19 min 47 sec   | 32.42% 
+  [ATF] Ulman          | 7       | 25.93%  | 9 h 18 min 39 sec    | 29.22% 
+  olegg                | 8       | 29.63%  | 9 h 1 min 44 sec     | 28.33% 
+  Rich                 | 5       | 18.52%  | 6 h 50 min 53 sec    | 21.49% 
+  SammySweet           | 2       | 7.41%   | 4 h 10 min 36 sec    | 13.11% 
+  Mr. Jazzy            | 2       | 7.41%   | 3 h 34 min 21 sec    | 11.21% 
+  10Dozen              | 3       | 11.11%  | 3 h 16 min 12 sec    | 10.26% 
+  Redid Stretch        | 2       | 7.41%   | 2 h 5 min 36 sec     | 6.57%  
+  FILISTIN             | 2       | 7.41%   | 2 h 5 min 36 sec     | 6.57%  
+
+
+
+Players (survivability rate, by Deaths):
+  Name                 | Deaths  | %       | Deploys | %       | Survivability  
+  ---                  | ---     | ---     | ---     | ---     | ---            
+  Galaxy               | 21      | 6.86%   | 37      | 6.15%   | 43.24%         
+  TUWONKA              | 19      | 6.21%   | 40      | 6.64%   | 52.50%         
+  Smoker               | 19      | 6.21%   | 35      | 5.81%   | 45.71%         
+  Twente               | 18      | 5.88%   | 37      | 6.15%   | 51.35%         
+  Osamich              | 16      | 5.23%   | 33      | 5.48%   | 51.52%         
+  Ka6aH                | 16      | 5.23%   | 31      | 5.15%   | 48.39%         
+  chek1                | 16      | 5.23%   | 34      | 5.65%   | 52.94%         
+  Venom_koket          | 14      | 4.58%   | 30      | 4.98%   | 53.33%         
+  Arsdor               | 14      | 4.58%   | 27      | 4.49%   | 48.15%         
+  Comrade              | 14      | 4.58%   | 27      | 4.49%   | 48.15%         
+  Реневал              | 13      | 4.25%   | 20      | 3.32%   | 35.00%         
+  [SK]Stepaz           | 13      | 4.25%   | 25      | 4.15%   | 48.00%         
+  Home                 | 12      | 4.98%   | 29      | 6.11%   | 58.62%         
+  [HL]Prais777         | 12      | 3.92%   | 27      | 4.49%   | 55.56%         
+  [JAT]BenZIn          | 12      | 3.92%   | 25      | 4.15%   | 52.00%         
+  Papa Het             | 12      | 3.92%   | 20      | 3.32%   | 40.00%         
+  [ATF] Ulman          | 10      | 15.38%  | 15      | 9.93%   | 33.33%         
+  Михаил               | 9       | 2.94%   | 24      | 3.99%   | 62.50%         
+  Ulman                | 9       | 3.56%   | 17      | 3.39%   | 47.06%         
+  Barich               | 8       | 3.42%   | 16      | 3.55%   | 50.00%         
+  olegg                | 8       | 4.40%   | 13      | 3.54%   | 38.46%         
+  Dushica              | 8       | 2.61%   | 16      | 2.66%   | 50.00%         
+  Redid Stretch        | 4       | 1.31%   | 6       | 1.00%   | 33.33%         
+  Rich                 | 3       | 2.54%   | 6       | 2.33%   | 50.00%         
+  Mr. Jazzy            | 3       | 2.94%   | 3       | 1.35%   | 0.00%          
+  10Dozen              | 3       | 0.98%   | 5       | 0.83%   | 40.00%         
+  SammySweet           | 0       | 0.00%   | 2       | 0.40%   | 100.00%        
+  FILISTIN             | 0       | 0.00%   | 2       | 0.33%   | 100.00%        
+
+Players (survivability rate, by Survivability):
+  Name                 | Deaths  | %       | Deploys | %       | Survivability  
+  ---                  | ---     | ---     | ---     | ---     | ---            
+  SammySweet           | 0       | 0.00%   | 2       | 0.40%   | 100.00%        
+  FILISTIN             | 0       | 0.00%   | 2       | 0.33%   | 100.00%        
+  Михаил               | 9       | 2.94%   | 24      | 3.99%   | 62.50%         
+  Home                 | 12      | 4.98%   | 29      | 6.11%   | 58.62%         
+  [HL]Prais777         | 12      | 3.92%   | 27      | 4.49%   | 55.56%         
+  Venom_koket          | 14      | 4.58%   | 30      | 4.98%   | 53.33%         
+  chek1                | 16      | 5.23%   | 34      | 5.65%   | 52.94%         
+  TUWONKA              | 19      | 6.21%   | 40      | 6.64%   | 52.50%         
+  [JAT]BenZIn          | 12      | 3.92%   | 25      | 4.15%   | 52.00%         
+  Osamich              | 16      | 5.23%   | 33      | 5.48%   | 51.52%         
+  Twente               | 18      | 5.88%   | 37      | 6.15%   | 51.35%         
+  Barich               | 8       | 3.42%   | 16      | 3.55%   | 50.00%         
+  Rich                 | 3       | 2.54%   | 6       | 2.33%   | 50.00%         
+  Dushica              | 8       | 2.61%   | 16      | 2.66%   | 50.00%         
+  Ka6aH                | 16      | 5.23%   | 31      | 5.15%   | 48.39%         
+  Arsdor               | 14      | 4.58%   | 27      | 4.49%   | 48.15%         
+  Comrade              | 14      | 4.58%   | 27      | 4.49%   | 48.15%         
+  [SK]Stepaz           | 13      | 4.25%   | 25      | 4.15%   | 48.00%         
+  Ulman                | 9       | 3.56%   | 17      | 3.39%   | 47.06%         
+  Smoker               | 19      | 6.21%   | 35      | 5.81%   | 45.71%         
+  Galaxy               | 21      | 6.86%   | 37      | 6.15%   | 43.24%         
+  Papa Het             | 12      | 3.92%   | 20      | 3.32%   | 40.00%         
+  10Dozen              | 3       | 0.98%   | 5       | 0.83%   | 40.00%         
+  olegg                | 8       | 4.40%   | 13      | 3.54%   | 38.46%         
+  Реневал              | 13      | 4.25%   | 20      | 3.32%   | 35.00%         
+  [ATF] Ulman          | 10      | 15.38%  | 15      | 9.93%   | 33.33%         
+  Redid Stretch        | 4       | 1.31%   | 6       | 1.00%   | 33.33%         
+  Mr. Jazzy            | 3       | 2.94%   | 3       | 1.35%   | 0.00%          
+
+
+
+Abandoned/Killed vehicles:
+  Vehicle                                            | Count   | %      
+  ---                                                | ---     | ---    
+  DShKM                                              | 32      | 6.64%  
+  F/A-181 Black Wasp II                              | 21      | 4.36%  
+  M2 HMG .50 (Raised)                                | 14      | 2.90%  
+  T-55                                               | 13      | 2.70%  
+  Hilux (DShKM)                                      | 12      | 2.49%  
+  BMP-2                                              | 10      | 2.07%  
+  Hilux                                              | 10      | 2.07%  
+  BTR-80                                             | 9       | 1.87%  
+  SPG-9                                              | 9       | 1.87%  
+  M252 81mm Mortar                                   | 9       | 1.87%  
+  BTR-80A                                            | 8       | 1.66%  
+  BMP-1                                              | 8       | 1.66%  
+  T-72                                               | 8       | 1.66%  
+  BMP-2 (obr. 1986g.)                                | 7       | 1.45%  
+  NSV (Low Tripod)                                   | 7       | 1.45%  
+  AGS-30                                             | 7       | 1.45%  
+  Ural                                               | 7       | 1.45%  
+  M1151 (FRAG7, m2, O-GPK)                           | 7       | 1.45%  
+  Ejection Seat                                      | 7       | 1.45%  
+  ZU-23-2                                            | 6       | 1.24%  
+  SUV                                                | 6       | 1.24%  
+  UAZ-469 (AGS-30)                                   | 5       | 1.04%  
+  M220 TOW-2                                         | 5       | 1.04%  
+  Podnos 2B14 Mortar                                 | 4       | 0.83%  
+  DSHkM Minitripod                                   | 4       | 0.83%  
+  Ural-4320                                          | 4       | 0.83%  
+  GAZ-24 Volga                                       | 4       | 0.83%  
+  M113A1                                             | 4       | 0.83%  
+  Quad Bike                                          | 4       | 0.83%  
+  L16A2 81mm Mortar                                  | 4       | 0.83%  
+  Steerable Parachute                                | 4       | 0.83%  
+  GAZ-233014 Tigr STS                                | 3       | 0.62%  
+  UAZ-3151                                           | 3       | 0.62%  
+  BTR-60PB                                           | 3       | 0.62%  
+  GAZ-233014 Tigr STS (PK)                           | 3       | 0.62%  
+  Ural (Ammo)                                        | 3       | 0.62%  
+  AH-6M Little Bird                                  | 3       | 0.62%  
+  Land Rover 110 (Transport)                         | 3       | 0.62%  
+  T-64BV                                             | 3       | 0.62%  
+  MT-LB LV                                           | 3       | 0.62%  
+  9K115-2 Metis-M                                    | 3       | 0.62%  
+  BTR-90                                             | 3       | 0.62%  
+  UAZ-469                                            | 3       | 0.62%  
+  BRDM-2                                             | 3       | 0.62%  
+  BTR-60PB (Green)                                   | 3       | 0.62%  
+  Kornet AT-14                                       | 3       | 0.62%  
+  M2A3 ERA Bradley IFV                               | 3       | 0.62%  
+  Škoda SM 11                                        | 3       | 0.62%  
+  Jeep Wrangler                                      | 3       | 0.62%  
+  RHIB                                               | 3       | 0.62%  
+  UH-60M                                             | 3       | 0.62%  
+  Jeep Wrangler (LMG)                                | 3       | 0.62%  
+  Search Light                                       | 3       | 0.62%  
+  BTR-80 (Green)                                     | 3       | 0.62%  
+  Marder 1A5 (Woodland)                              | 3       | 0.62%  
+  GTK Boxer (HMG)                                    | 3       | 0.62%  
+  Lada 1500                                          | 2       | 0.41%  
+  BTR-40 (Unarmed)                                   | 2       | 0.41%  
+  KORD                                               | 2       | 0.41%  
+  AGS-30 (6P17)                                      | 2       | 0.41%  
+  Land Rover 110 (M2)                                | 2       | 0.41%  
+  Kamaz 5350 (Repair)                                | 2       | 0.41%  
+  Ural (ZU-23)                                       | 2       | 0.41%  
+  Kamaz-6396 Transport (Covered)                     | 2       | 0.41%  
+  GAZ-233011                                         | 2       | 0.41%  
+  BMP-3                                              | 2       | 0.41%  
+  Mi-24D                                             | 2       | 0.41%  
+  Pickup                                             | 2       | 0.41%  
+  T-55A                                              | 2       | 0.41%  
+  M1036 (M220/TOW, Fording)                          | 2       | 0.41%  
+  M997 (Ambulance)                                   | 2       | 0.41%  
+  Škoda S1203 (Militia)                              | 2       | 0.41%  
+  Truck                                              | 2       | 0.41%  
+  M2 Machine Gun                                     | 2       | 0.41%  
+  Mini Cooper                                        | 2       | 0.41%  
+  HMMWV (M2)                                         | 2       | 0.41%  
+  GAZ-233114 Tigr-M (Camo)                           | 2       | 0.41%  
+  UAZ-469 (DShKM)                                    | 2       | 0.41%  
+  T-64B                                              | 2       | 0.41%  
+  M60A3                                              | 2       | 0.41%  
+  ZiL-131                                            | 2       | 0.41%  
+  Mastiff PPV LMG Woodland                           | 2       | 0.41%  
+  M1A1FEP                                            | 2       | 0.41%  
+  UAZ-469 (Open)                                     | 2       | 0.41%  
+  Dingo 2 (MG) (Woodland)                            | 2       | 0.41%  
+  Fuchs 1A4 Infantry-Milan (Woodland)                | 2       | 0.41%  
+  Marder 1A5 (Desert)                                | 2       | 0.41%  
+  Ka-60                                              | 1       | 0.21%  
+  GAZ-66                                             | 1       | 0.21%  
+  GAZ-66 (Ammo)                                      | 1       | 0.21%  
+  Ural (Empty)                                       | 1       | 0.21%  
+  GAZ-233114 Tigr-M (KORD)                           | 1       | 0.21%  
+  Mi-8MT                                             | 1       | 0.21%  
+  BMP-2 Ambulance                                    | 1       | 0.21%  
+  КОРД/6П50 (СПП-М)                                  | 1       | 0.21%  
+  BMP-2K                                             | 1       | 0.21%  
+  GAZ-233114 Tigr-M (PK                              | 1       | 0.21%  
+  Ural (Refuel)                                      | 1       | 0.21%  
+  9K133-1 Kornet-M                                   | 1       | 0.21%  
+  BRDM-2 (HQ)                                        | 1       | 0.21%  
+  T-80U                                              | 1       | 0.21%  
+  GAZ-233014                                         | 1       | 0.21%  
+  ZSU-23-4                                           | 1       | 0.21%  
+  T-72B1                                             | 1       | 0.21%  
+  Ural (Repair)                                      | 1       | 0.21%  
+  UAZ-469 (SPG-9)                                    | 1       | 0.21%  
+  Kamaz 5350 (Open)                                  | 1       | 0.21%  
+  HMMWV M1114 DSHKM                                  | 1       | 0.21%  
+  Ural-4320 (Blue/Open)                              | 1       | 0.21%  
+  RG-31 Mk5E M2                                      | 1       | 0.21%  
+  Rooikat 120                                        | 1       | 0.21%  
+  T-55AMV                                            | 1       | 0.21%  
+  HMMWV CROWS M2                                     | 1       | 0.21%  
+  GAZ-233114 (Camo)                                  | 1       | 0.21%  
+  M1025 (Unarmed)                                    | 1       | 0.21%  
+  Hilux (BTR-60)                                     | 1       | 0.21%  
+  BTR-40 (DSHKM)                                     | 1       | 0.21%  
+  Hilux Armored (SPG-9)                              | 1       | 0.21%  
+  Hilux Armored (BMP-1)                              | 1       | 0.21%  
+  Hilux Armored (BTR-60)                             | 1       | 0.21%  
+  Hilux (Podnos)                                     | 1       | 0.21%  
+  RG-31 Nyala M2                                     | 1       | 0.21%  
+  BRDM-2UM                                           | 1       | 0.21%  
+  BMP-2 HQ                                           | 1       | 0.21%  
+  M1151 (FRAG7, mk19, O-GPK)                         | 1       | 0.21%  
+  BMP-1P                                             | 1       | 0.21%  
+  VAZ-2103                                           | 1       | 0.21%  
+  Škoda 105 L                                        | 1       | 0.21%  
+  Ural (Worker)                                      | 1       | 0.21%  
+  VAZ-2103 (Red)                                     | 1       | 0.21%  
+  AH-6M                                              | 1       | 0.21%  
+  T-41 Mescalero (Armed)                             | 1       | 0.21%  
+  Ural-4320 (Yellow)                                 | 1       | 0.21%  
+  MH-6J                                              | 1       | 0.21%  
+  Aml20                                              | 1       | 0.21%  
+  BTR-80A (Winter)                                   | 1       | 0.21%  
+  NSV (High Tripod)                                  | 1       | 0.21%  
+  Kamaz-6396 Fuel                                    | 1       | 0.21%  
+  Crocus AP                                          | 1       | 0.21%  
+  MT-LB LV (Winter)                                  | 1       | 0.21%  
+  Ural (Open)                                        | 1       | 0.21%  
+  AL-6 Pelican                                       | 1       | 0.21%  
+  Patrol Boat                                        | 1       | 0.21%  
+  M1030                                              | 1       | 0.21%  
+  MK19 Minitripod                                    | 1       | 0.21%  
+  Van (Cargo)                                        | 1       | 0.21%  
+  UH-60M (Unarmed)                                   | 1       | 0.21%  
+  M113A3                                             | 1       | 0.21%  
+  Van (Ambulance)                                    | 1       | 0.21%  
+  BMD-2                                              | 1       | 0.21%  
+  Hilux (Red)                                        | 1       | 0.21%  
+  Hilux (Tan)                                        | 1       | 0.21%  
+  M1165A1 GMV (SAG-2/M2/M240)                        | 1       | 0.21%  
+  HMMWV M1151 M2                                     | 1       | 0.21%  
+  Konkurs AT-5                                       | 1       | 0.21%  
+  BRDM-2 (9K111)                                     | 1       | 0.21%  
+  GAZ-66 (ZU-23-2)                                   | 1       | 0.21%  
+  GAZ-66 (Open)                                      | 1       | 0.21%  
+  FV510 Warrior (SLAT - Woodland)                    | 1       | 0.21%  
+  KORD (6T7)                                         | 1       | 0.21%  
+  T-90A                                              | 1       | 0.21%  
+  Igla AA Pod                                        | 1       | 0.21%  
+  M1238A1 ASV                                        | 1       | 0.21%  
+  Golf (Black)                                       | 1       | 0.21%  
+  Golf (Yellow)                                      | 1       | 0.21%  
+  Ural-4320 Cargo                                    | 1       | 0.21%  
+  Leopard 2A6                                        | 1       | 0.21%  
+  Praga V3S                                          | 1       | 0.21%  
+  AH-6J                                              | 1       | 0.21%  
+  UH-60M (FFV)                                       | 1       | 0.21%  
+  Milan                                              | 1       | 0.21%  
+  GTK Boxer (Empty)                                  | 1       | 0.21%  
+  LKW leicht gl Wolf Command Vehicle (Woodland)      | 1       | 0.21%  
+
+
+
