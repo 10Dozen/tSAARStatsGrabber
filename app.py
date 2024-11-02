@@ -5,43 +5,49 @@ import zipfile
 import json
 import operator
 
-EXPORT_FILENAME = "AAR Stats 2024-08.txt"
-DATE_STARTS_WITH = '2024-08-'
+EXPORT_FILENAME = "AAR Stats 2024-10.txt"
+DATE_STARTS_WITH = '2024-10-'
 # AAR_BASE_DIR = r'G:\tS\aarDataGrabber\aars'
 AAR_BASE_DIR = r'D:\Github\aar\aars'
 
 TERRAIN_CODENAME_TO_NAME = {
-    'tem_kujari': {'name': 'Kujari'},
-    'WL_Rosche': {'name': 'Rosche, Germany'},
-    'cain': {'name': 'Kolgujev (CWR)'},
-    'cup_chernarus_A3': {'name': 'Chernarus 2020'},
-    'Malden': {'name': 'Malden (2035)'},
-    'VTF_Korsac': {'name': 'Korsac'},
-    'VTF_Korsac_Winter': {'name': 'Korsac (Winter)'},
-    'MCN_Aliabad': {'name': 'Aliabad Region'},
-    'tem_ihantalaw': {'name': 'Ihantala Winter'},
-    'lingor3': {'name': 'Lingor Island'},
-    'sara_dbe1': {'name': 'Sahrani'},
-    'brf_sumava': {'name': 'Šumava'},
-    'Woodland_ACR': {'name': 'Bystica'},
-    'Altis': {'name': 'Altis'},
-    'takistan': {'name': 'Takistan'},
-    'chernarus': {'name': 'Chernarus'},
-    'chernarus_summer': {'name': 'Chernarus (Summer)'},
-    'Chernarus_winter': {'name': 'Chernarus (Winter)'},
-    'Tanoa': {'name': 'Tanoa'},
-    'ruha': {'name': 'Ruha'},
-    'Kunduz': {'name': 'Kunduz, Afghanistan'},
-    'Zargabad': {'name': 'Zargabad'},
-    'IslaPera': {'name': 'Isla Pera'},
-    'Farabad': {'name': 'Farabad'},
-    'intro': {'name': 'intro'},
-    'ProvingGrounds_PMC': {'name':'Proving Grounds'},
-    'Desert_E': {'name': 'Desert'},
-    'DYA': {'name': 'Diyala'},
-    'Bootcamp_ACR': {'name': 'Bukovina'},
-    'Mountains_ACR': {'name': 'Takistan Mountains'},
-    'porto': {'name': 'Porto'}
+    'tem_kujari'.lower():           {'name': 'Kujari'},
+    'WL_Rosche'.lower():            {'name': 'Rosche, Germany'},
+    'cain'.lower():                 {'name': 'Kolgujev (CWR)'},
+    'cup_chernarus_A3'.lower():     {'name': 'Chernarus 2020'},
+    'Malden'.lower():               {'name': 'Malden (2035)'},
+    'VTF_Korsac'.lower():           {'name': 'Korsac'},
+    'VTF_Korsac_Winter'.lower():    {'name': 'Korsac (Winter)'},
+    'MCN_Aliabad'.lower():          {'name': 'Aliabad Region'},
+    'tem_ihantalaw'.lower():        {'name': 'Ihantala Winter'},
+    'lingor3'.lower():              {'name': 'Lingor Island'},
+    'sara_dbe1'.lower():            {'name': 'Sahrani'},
+    'brf_sumava'.lower():           {'name': 'Šumava'},
+    'Woodland_ACR'.lower():         {'name': 'Bystica'},
+    'Altis'.lower():                {'name': 'Altis'},
+    'takistan'.lower():             {'name': 'Takistan'},
+    'chernarus'.lower():            {'name': 'Chernarus'},
+    'chernarus_summer'.lower():     {'name': 'Chernarus (Summer)'},
+    'Chernarus_winter'.lower():     {'name': 'Chernarus (Winter)'},
+    'Tanoa'.lower():                {'name': 'Tanoa'},
+    'ruha'.lower():                 {'name': 'Ruha'},
+    'Kunduz'.lower():               {'name': 'Kunduz, Afghanistan'},
+    'Zargabad'.lower():             {'name': 'Zargabad'},
+    'IslaPera'.lower():             {'name': 'Isla Pera'},
+    'Farabad'.lower():              {'name': 'Farabad'},
+    'intro'.lower():                {'name': 'intro'},
+    'ProvingGrounds_PMC'.lower():   {'name': 'Proving Grounds'},
+    'Desert_E'.lower():             {'name': 'Desert'},
+    'DYA'.lower():                  {'name': 'Diyala'},
+    'Bootcamp_ACR'.lower():         {'name': 'Bukovina'},
+    'Mountains_ACR'.lower():        {'name': 'Takistan Mountains'},
+    'porto'.lower():                {'name': 'Porto'},
+    'eden'.lower():                 {'name': 'Everon'},
+    'go_map_fjord'.lower():         {'name': 'Fjord'},
+    'cartercity'.lower():           {'name': 'Pecher'},
+    'vtf_lybor'.lower():            {'name': 'Lybor'},
+    'stratis'.lower():              {'name': 'Stratis'},
+    'tem_vinjesvingenc'.lower():    {'name': 'Vinjesvingenc'},
 }
 
 EXPORTER = None
@@ -311,7 +317,7 @@ def read_aars(aar_files):
         total_ai_kills += aar.ai_killed
         total_player_lost += len(aar.players_killed)
 
-        terrain = aar.terrain
+        terrain = aar.terrain.lower()
         terrain_name = None 
         if not TERRAIN_CODENAME_TO_NAME.get(terrain):
             raise ValueError(f"Failed to find name for the [{terrain}] terrain")
