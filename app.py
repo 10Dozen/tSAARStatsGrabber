@@ -4,6 +4,7 @@ from datetime import datetime, timedelta
 import zipfile
 import json
 import operator
+from typing import Dict
 
 EXPORT_FILENAME = "AAR Stats 2024-10.txt"
 DATE_STARTS_WITH = '2024-10-'
@@ -54,12 +55,12 @@ EXPORTER = None
 
 class AAR:
     def __init__(self,
-                 mission_name, terrain, time,
+                 mission_name, terrain, mission_time,
                  players, players_deployed, players_killed,
-                 shots_fired, ai_killed,  vehicles_killed):
+                 shots_fired, ai_killed,  vehicles_killed, players_count = None):
         self.mission_name = mission_name
         self.terrain = terrain
-        self.mission_time = time
+        self.mission_time = mission_time
         self.players = players
         self.players_count = len(players)
         self.players_deployed = players_deployed
@@ -67,6 +68,16 @@ class AAR:
         self.ai_killed = ai_killed
         self.vehicles_killed = vehicles_killed
         self.shots_fired = shots_fired
+
+    def serialize(self) -> Dict:
+        d = self.__dict__.copy()
+        d['players'] = list(d['players'])
+        return d
+    
+    @staticmethod
+    def deserialize(data):
+        return AAR(**data)
+
 
 
 class PlayerStat:
@@ -401,36 +412,58 @@ def read_aars(aar_files):
 
 def read_aar(aar_file):
     filepath = Path.joinpath(Path(AAR_BASE_DIR), Path(aar_file))
+    print('Reading %s' % filepath)
     if not Path.exists(filepath):
+        print('File not found...')
         return
-
+    
     extracted = Path(aar_file.rsplit(".", maxsplit=1)[0] + '.txt')
-    if not Path.exists(extracted):
-        with zipfile.ZipFile(filepath) as zf:
-            zf.extractall()
+    aar_data = read_cached_aar_data(extracted)
+    if not aar_data:
+        if not Path.exists(extracted):
+            with zipfile.ZipFile(filepath) as zf:
+                zf.extractall()
+    
+        with open(extracted, 'r', encoding='utf-8') as ef:
+            parsed_data = json.loads(
+                (ef.readlines()[0])[len('aarFileData = '):]
+            )
 
-    with open(extracted, 'r', encoding='utf-8') as ef:
-        parsed_data = json.loads(
-            (ef.readlines()[0])[len('aarFileData = '):]
+        players = set([p[0] for p in parsed_data['metadata']['players']])
+        deployed_players = [u[1] for u in parsed_data['metadata']['objects']['units'] if u[3] == 1]
+        shots_fired = sum([len(tl[2]) for tl in parsed_data['timeline']])
+        killed_players, killed_units_count, killed_vehicles = track_kia_units(parsed_data)
+
+        aar_data = AAR(
+            mission_name=parsed_data['metadata']['name'],
+            terrain=parsed_data['metadata']['island'],
+            mission_time=parsed_data['metadata']['time'],
+            players=players,
+            players_deployed=deployed_players,
+            players_killed=killed_players,
+            ai_killed=killed_units_count,
+            vehicles_killed=killed_vehicles,
+            shots_fired=shots_fired
         )
+        
+        cache_aar_data(extracted, aar_data)
 
-    players = set([p[0] for p in parsed_data['metadata']['players']])
-    deployed_players = [u[1] for u in parsed_data['metadata']['objects']['units'] if u[3] == 1]
-    shots_fired = sum([len(tl[2]) for tl in parsed_data['timeline']])
-    killed_players, killed_units_count, killed_vehicles = track_kia_units(parsed_data)
+    return aar_data
 
-    return AAR(
-        mission_name=parsed_data['metadata']['name'],
-        terrain=parsed_data['metadata']['island'],
-        time=parsed_data['metadata']['time'],
-        players=players,
-        players_deployed=deployed_players,
-        players_killed=killed_players,
-        ai_killed=killed_units_count,
-        vehicles_killed=killed_vehicles,
-        shots_fired=shots_fired
-    )
 
+def read_cached_aar_data(filename: Path) -> AAR:
+    filename = Path(filename.name + '.cache')
+    if not Path.exists(filename):
+        return None
+    
+    print('AAR data was read from cache')
+    parsed_data = json.load(open(filename, 'r', encoding='utf-8'))
+    return AAR.deserialize(parsed_data)
+    
+
+def cache_aar_data(filename: str, aar_data: AAR) -> None: 
+    with open(Path(filename.name + '.cache'), 'w', encoding='utf-8') as f:
+        f.write(json.dumps(aar_data.serialize()))
 
 
 
