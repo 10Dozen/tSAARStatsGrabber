@@ -49,6 +49,7 @@ TERRAIN_CODENAME_TO_NAME = {
     'vtf_lybor'.lower():            {'name': 'Lybor'},
     'stratis'.lower():              {'name': 'Stratis'},
     'tem_vinjesvingenc'.lower():    {'name': 'Vinjesvingenc'},
+    'dingor'.lower():               {'name': 'Dingor Island'},
 }
 
 EXPORTER = None
@@ -77,7 +78,6 @@ class AAR:
     @staticmethod
     def deserialize(data):
         return AAR(**data)
-
 
 
 class PlayerStat:
