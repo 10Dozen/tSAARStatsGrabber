@@ -75,6 +75,11 @@ class Exporter:
         "line": "  %-20s | %-7s | %-7s | %-7s | %-7s | %-15s",
         "headers": ('Name', 'Deaths', '%', 'Deploys', '%', 'Survivability')
     }
+    TOP_PLAYERS_SURVIVE_GRID = {
+        "title": "Most-participating Players (survivability rate,  by %s):",
+        "line": "  %-20s | %-7s | %-7s | %-7s | %-7s | %-15s",
+        "headers": ('Name', 'Deaths', '%', 'Deploys', '%', 'Survivability')
+    }
     TERRAINS = {
         "title": "Terrains (by %s):",
         "line": "  %-20s | %-7s | %-7s | %-20s | %-7s",
@@ -160,10 +165,11 @@ class Exporter:
                 data_set=player_partaking_stats.values()
             )
 
-    def write_players_survivability_grid(self, per_player_data):
+    def write_players_survivability_grid(self, per_player_data, top=False):
+        print("Exorting Survavive rate")
         self._grid_players_survive_rate = \
             self.__write_multi_sort_grid(
-                gridname="PLAYERS_SURVIVE_GRID",
+                gridname="TOP_PLAYERS_SURVIVE_GRID" if top else "PLAYERS_SURVIVE_GRID",
                 data_set=per_player_data.values(),
                 data_set_reader=lambda d: (
                     d.name,
@@ -174,7 +180,7 @@ class Exporter:
                     self.format_percent(d.survivability)
                 ),
                 sort_rules=[
-                    ("Deaths", {"key": operator.attrgetter('deaths'), "reverse": True}),
+                    ("Max Deaths", {"key": operator.attrgetter('deaths'), "reverse": True}),
                     ("Survivability", {"key": operator.attrgetter('survivability'), "reverse": True})
                 ]
             )
@@ -262,10 +268,10 @@ def read_files(dir, filter_by_date: str):
 
 
 def read_aars(dir, aar_files):
-    missions_in_period = len(aar_files)
-    mission_names = []
-    total_time = 0
-    total_deployed_units = 0
+    missions_in_period: int = len(aar_files)
+    mission_names: list[str] = []
+    total_time: int = 0
+    total_deployed_units: int = 0
     players_data = []
     per_player_data: dict[str, PlayerStat] = {}
     terrains_stats = {}
@@ -350,7 +356,13 @@ def read_aars(dir, aar_files):
 
     EXPORTER.write_players_partaking_grid(player_partaking_stats)
 
-    # Player survivabilirt stats
+    # Player survivability stats
+    top_participating_players = {
+        name: per_player_data[name]
+        for name, stat in player_partaking_stats.items()
+        if stat["count"] >= missions_in_period/2
+    }
+    EXPORTER.write_players_survivability_grid(top_participating_players, True)
     EXPORTER.write_players_survivability_grid(per_player_data)
 
     # Terrains

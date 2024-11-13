@@ -86,16 +86,16 @@ Players (partaking, by Events visited):
   ---                  | ---     | ---     | ---                  | ---    
   TUWONKA              | 27      | 100.00% | 1 day 7 h 51 min 57 sec | 100.00%
   Twente               | 23      | 85.19%  | 1 day 3 h 52 min 50 sec | 87.49% 
-  Ka6aH                | 22      | 81.48%  | 1 day 2 h 19 min 42 sec | 82.62% 
-  chek1                | 22      | 81.48%  | 1 day 3 h 20 min 40 sec | 85.81% 
   Smoker               | 22      | 81.48%  | 1 day 1 h 3 min 28 sec | 78.64% 
+  chek1                | 22      | 81.48%  | 1 day 3 h 20 min 40 sec | 85.81% 
+  Ka6aH                | 22      | 81.48%  | 1 day 2 h 19 min 42 sec | 82.62% 
   Galaxy               | 21      | 77.78%  | 1 day 2 h 1 min 31 sec | 81.67% 
   Home                 | 21      | 77.78%  | 1 day 1 h 24 min 28 sec | 79.73% 
   [HL]Prais777         | 20      | 74.07%  | 1 day 2 h 29 min 40 sec | 83.14% 
   Osamich              | 19      | 70.37%  | 1 day 0 h 14 min 15 sec | 76.06% 
   Venom_koket          | 19      | 70.37%  | 1 day 1 h 7 min 25 sec | 78.84% 
-  Михаил               | 17      | 62.96%  | 19 h 53 min 54 sec   | 62.44% 
   Arsdor               | 17      | 62.96%  | 21 h 20 min 33 sec   | 66.98% 
+  Михаил               | 17      | 62.96%  | 19 h 53 min 54 sec   | 62.44% 
   Comrade              | 17      | 62.96%  | 21 h 25 min 1 sec    | 67.21% 
   [SK]Stepaz           | 17      | 62.96%  | 20 h 46 min 56 sec   | 65.22% 
   [JAT]BenZIn          | 14      | 51.85%  | 17 h 44 min 33 sec   | 55.68% 
@@ -110,8 +110,8 @@ Players (partaking, by Events visited):
   10Dozen              | 3       | 11.11%  | 3 h 16 min 12 sec    | 10.26% 
   SammySweet           | 2       | 7.41%   | 4 h 10 min 36 sec    | 13.11% 
   Mr. Jazzy            | 2       | 7.41%   | 3 h 34 min 21 sec    | 11.21% 
-  Redid Stretch        | 2       | 7.41%   | 2 h 5 min 36 sec     | 6.57%  
   FILISTIN             | 2       | 7.41%   | 2 h 5 min 36 sec     | 6.57%  
+  Redid Stretch        | 2       | 7.41%   | 2 h 5 min 36 sec     | 6.57%  
 
 Players (partaking, by Playtime):
   Name                 | Events  | %       | Playtime             | %      
@@ -142,8 +142,8 @@ Players (partaking, by Playtime):
   SammySweet           | 2       | 7.41%   | 4 h 10 min 36 sec    | 13.11% 
   Mr. Jazzy            | 2       | 7.41%   | 3 h 34 min 21 sec    | 11.21% 
   10Dozen              | 3       | 11.11%  | 3 h 16 min 12 sec    | 10.26% 
-  Redid Stretch        | 2       | 7.41%   | 2 h 5 min 36 sec     | 6.57%  
   FILISTIN             | 2       | 7.41%   | 2 h 5 min 36 sec     | 6.57%  
+  Redid Stretch        | 2       | 7.41%   | 2 h 5 min 36 sec     | 6.57%  
 
 
 
@@ -151,19 +151,19 @@ Players (survivability rate, by Deaths):
   Name                 | Deaths  | %       | Deploys | %       | Survivability  
   ---                  | ---     | ---     | ---     | ---     | ---            
   Galaxy               | 21      | 6.86%   | 37      | 6.15%   | 43.24%         
-  TUWONKA              | 19      | 6.21%   | 40      | 6.64%   | 52.50%         
   Smoker               | 19      | 6.21%   | 35      | 5.81%   | 45.71%         
+  TUWONKA              | 19      | 6.21%   | 40      | 6.64%   | 52.50%         
   Twente               | 18      | 5.88%   | 37      | 6.15%   | 51.35%         
-  Osamich              | 16      | 5.23%   | 33      | 5.48%   | 51.52%         
-  Ka6aH                | 16      | 5.23%   | 31      | 5.15%   | 48.39%         
   chek1                | 16      | 5.23%   | 34      | 5.65%   | 52.94%         
+  Ka6aH                | 16      | 5.23%   | 31      | 5.15%   | 48.39%         
+  Osamich              | 16      | 5.23%   | 33      | 5.48%   | 51.52%         
   Venom_koket          | 14      | 4.58%   | 30      | 4.98%   | 53.33%         
   Arsdor               | 14      | 4.58%   | 27      | 4.49%   | 48.15%         
   Comrade              | 14      | 4.58%   | 27      | 4.49%   | 48.15%         
   Реневал              | 13      | 4.25%   | 20      | 3.32%   | 35.00%         
   [SK]Stepaz           | 13      | 4.25%   | 25      | 4.15%   | 48.00%         
-  Home                 | 12      | 4.98%   | 29      | 6.11%   | 58.62%         
   [HL]Prais777         | 12      | 3.92%   | 27      | 4.49%   | 55.56%         
+  Home                 | 12      | 4.98%   | 29      | 6.11%   | 58.62%         
   [JAT]BenZIn          | 12      | 3.92%   | 25      | 4.15%   | 52.00%         
   Papa Het             | 12      | 3.92%   | 20      | 3.32%   | 40.00%         
   [ATF] Ulman          | 10      | 15.38%  | 15      | 9.93%   | 33.33%         
@@ -173,8 +173,8 @@ Players (survivability rate, by Deaths):
   olegg                | 8       | 4.40%   | 13      | 3.54%   | 38.46%         
   Dushica              | 8       | 2.61%   | 16      | 2.66%   | 50.00%         
   Redid Stretch        | 4       | 1.31%   | 6       | 1.00%   | 33.33%         
-  Rich                 | 3       | 2.54%   | 6       | 2.33%   | 50.00%         
   Mr. Jazzy            | 3       | 2.94%   | 3       | 1.35%   | 0.00%          
+  Rich                 | 3       | 2.54%   | 6       | 2.33%   | 50.00%         
   10Dozen              | 3       | 0.98%   | 5       | 0.83%   | 40.00%         
   SammySweet           | 0       | 0.00%   | 2       | 0.40%   | 100.00%        
   FILISTIN             | 0       | 0.00%   | 2       | 0.33%   | 100.00%        
