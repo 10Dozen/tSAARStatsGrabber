@@ -1,57 +1,14 @@
 from pathlib import Path
 from collections import Counter
 from datetime import datetime, timedelta
+import sys
 import zipfile
 import json
 import operator
 from typing import Dict
 
-EXPORT_FILENAME = "AAR Stats 2024-10.txt"
-DATE_STARTS_WITH = '2024-10-'
-# AAR_BASE_DIR = r'G:\tS\aarDataGrabber\aars'
-AAR_BASE_DIR = r'D:\Github\aar\aars'
-
-TERRAIN_CODENAME_TO_NAME = {
-    'tem_kujari'.lower():           {'name': 'Kujari'},
-    'WL_Rosche'.lower():            {'name': 'Rosche, Germany'},
-    'cain'.lower():                 {'name': 'Kolgujev (CWR)'},
-    'cup_chernarus_A3'.lower():     {'name': 'Chernarus 2020'},
-    'Malden'.lower():               {'name': 'Malden (2035)'},
-    'VTF_Korsac'.lower():           {'name': 'Korsac'},
-    'VTF_Korsac_Winter'.lower():    {'name': 'Korsac (Winter)'},
-    'MCN_Aliabad'.lower():          {'name': 'Aliabad Region'},
-    'tem_ihantalaw'.lower():        {'name': 'Ihantala Winter'},
-    'lingor3'.lower():              {'name': 'Lingor Island'},
-    'sara_dbe1'.lower():            {'name': 'Sahrani'},
-    'brf_sumava'.lower():           {'name': 'Šumava'},
-    'Woodland_ACR'.lower():         {'name': 'Bystica'},
-    'Altis'.lower():                {'name': 'Altis'},
-    'takistan'.lower():             {'name': 'Takistan'},
-    'chernarus'.lower():            {'name': 'Chernarus'},
-    'chernarus_summer'.lower():     {'name': 'Chernarus (Summer)'},
-    'Chernarus_winter'.lower():     {'name': 'Chernarus (Winter)'},
-    'Tanoa'.lower():                {'name': 'Tanoa'},
-    'ruha'.lower():                 {'name': 'Ruha'},
-    'Kunduz'.lower():               {'name': 'Kunduz, Afghanistan'},
-    'Zargabad'.lower():             {'name': 'Zargabad'},
-    'IslaPera'.lower():             {'name': 'Isla Pera'},
-    'Farabad'.lower():              {'name': 'Farabad'},
-    'intro'.lower():                {'name': 'intro'},
-    'ProvingGrounds_PMC'.lower():   {'name': 'Proving Grounds'},
-    'Desert_E'.lower():             {'name': 'Desert'},
-    'DYA'.lower():                  {'name': 'Diyala'},
-    'Bootcamp_ACR'.lower():         {'name': 'Bukovina'},
-    'Mountains_ACR'.lower():        {'name': 'Takistan Mountains'},
-    'porto'.lower():                {'name': 'Porto'},
-    'eden'.lower():                 {'name': 'Everon'},
-    'go_map_fjord'.lower():         {'name': 'Fjord'},
-    'cartercity'.lower():           {'name': 'Pecher'},
-    'vtf_lybor'.lower():            {'name': 'Lybor'},
-    'stratis'.lower():              {'name': 'Stratis'},
-    'tem_vinjesvingenc'.lower():    {'name': 'Vinjesvingenc'},
-    'dingor'.lower():               {'name': 'Dingor Island'},
-}
-
+CONFIG_FILENAME = 'config.json'
+CONFIG = None
 EXPORTER = None
 
 class AAR:
@@ -289,9 +246,10 @@ def get_time(time_s):
 def get_percent(v, t):
     return (v / t * 100)
 
-def read_files(filter_by_date=DATE_STARTS_WITH):
+def read_files(dir, filter_by_date: str):
+    print(f"Отбираются AAR за период {filter_by_date}")
     filtered = []
-    for aar_file in Path(AAR_BASE_DIR).iterdir():
+    for aar_file in Path(dir).iterdir():
         parts = aar_file.name.split(".")
         if len(parts) == 3:
             continue
@@ -299,10 +257,11 @@ def read_files(filter_by_date=DATE_STARTS_WITH):
         if date.startswith(filter_by_date):
             filtered.append(aar_file.name)
 
+    print(f"Обнаружено {len(filtered)} AAR за период {filter_by_date}")
     return filtered
 
 
-def read_aars(aar_files):
+def read_aars(dir, aar_files):
     missions_in_period = len(aar_files)
     mission_names = []
     total_time = 0
@@ -317,7 +276,9 @@ def read_aars(aar_files):
     max_players_counts = 0
 
     for aar_file in aar_files:
-        aar = read_aar(aar_file)
+        aar = read_aar(dir, aar_file)
+        if not aar:
+            continue
         mission_names.append(aar.mission_name)
         mission_time = aar.mission_time
 
@@ -329,12 +290,12 @@ def read_aars(aar_files):
         total_player_lost += len(aar.players_killed)
 
         terrain = aar.terrain.lower()
-        terrain_name = None 
-        if not TERRAIN_CODENAME_TO_NAME.get(terrain):
+        terrain_name = CONFIG["Terrains"].get(terrain) 
+        if not terrain_name:
             raise ValueError(f"Failed to find name for the [{terrain}] terrain")
             
         terrain_stat = terrains_stats.get(terrain, {
-            "name": TERRAIN_CODENAME_TO_NAME.get(terrain).get("name"),
+            "name": terrain_name.get("name"),
             "count": 0,
             "time": 0,
             "count_per": 0,
@@ -358,7 +319,6 @@ def read_aars(aar_files):
 
             per_player_data[p] = p_stat
 
-    
     mission_avg_time = total_time / missions_in_period
     EXPORTER.write_raw_line("Overall data:")
     EXPORTER.write_raw_line(f"  Total mission time: {total_time} sec ({get_time(total_time)})")
@@ -410,8 +370,8 @@ def read_aars(aar_files):
     EXPORTER.write_abandoned_vehicles_stats(abandoned_vehicles_stats)
 
 
-def read_aar(aar_file):
-    filepath = Path.joinpath(Path(AAR_BASE_DIR), Path(aar_file))
+def read_aar(dir, aar_file):
+    filepath = Path.joinpath(Path(dir), Path(aar_file))
     print('Reading %s' % filepath)
     if not Path.exists(filepath):
         print('File not found...')
@@ -544,9 +504,48 @@ def track_kia_units(aar_data):
     return killed_players, killed_units_count, killed_vehicles
 
 
-if __name__ == '__main__':
-    EXPORTER = Exporter(EXPORT_FILENAME)
-    print("----")
-    read_aars(read_files())
+def read_config(config_name: str):
+    config_data = None 
+    with open(config_name, 'r', encoding='utf-8') as f:
+        config_data = json.load(f)
+    return config_data
 
+if __name__ == '__main__':
+    print("       ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓")
+    print("       ┃   tS AAR/ORBAT Analytics (v.1.1.0)   ┃")
+    print("       ┃           by 10Dozen                 ┃")
+    print("       ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛")
+    print(" Убедитесь, что настроены пути до соответствующих директорий в файле config.json!")
+    print()
+
+    CONFIG = read_config(CONFIG_FILENAME)
+    terrains = {}
+    for k, v in CONFIG["Terrains"].items():
+        terrains[k.lower()] = v
+    CONFIG["Terrains"] = terrains
+
+    current_date = datetime.today()
+    target_period = [current_date.year, current_date.month - 1]
+
+    in_year = input(f"Год ({target_period[0]}): ")
+    if in_year:
+        target_period[0] = int(in_year)
+
+    in_month = input(f"Месяц ({target_period[1]}): ")
+    if in_month:
+        target_period[1] = int(in_month)
+
+    period_substr = "%d-%02d" % tuple(target_period)
+    export_filename = CONFIG['OutputFilenameFormat'] % period_substr  
+    EXPORTER = Exporter(export_filename)
+    print("----")
+
+    files = read_files(CONFIG['AARDirectory'], period_substr)    
+    if not files:
+        print(f"ОШИБКА: Не обнаружено AAR за указанный период ({period_substr})")
+        sys.exit(1)
+
+    read_aars(CONFIG['AARDirectory'], files)
     EXPORTER.export()
+    sys.exit(0)
+    
