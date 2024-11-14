@@ -1,0 +1,53 @@
+{
+    "mission_name": "CO14 Bloody Dawn",
+    "terrain": "Mountains_ACR",
+    "mission_time": 1966,
+    "players": [
+        "SammySweet",
+        "Osamich",
+        "Dushica",
+        "Galaxy",
+        "Smoker",
+        "Venom_koket",
+        "invaderok",
+        "[HL]Prais777",
+        "Михаил"
+    ],
+    "players_deployed": [
+        "SammySweet",
+        "Osamich",
+        "Dushica",
+        "Galaxy",
+        "Smoker",
+        "Venom_koket",
+        "invaderok",
+        "[HL]Prais777",
+        "Михаил",
+        "Smoker",
+        "Venom_koket",
+        "Smoker",
+        "Osamich",
+        "Dushica",
+        "[HL]Prais777"
+    ],
+    "players_killed": [
+        "Smoker",
+        "Venom_koket",
+        "Venom_koket",
+        "Smoker",
+        "Osamich",
+        "invaderok",
+        "Dushica",
+        "[HL]Prais777"
+    ],
+    "ai_killed": 40,
+    "vehicles_killed": [
+        "Pickup",
+        "Pickup",
+        "RG-31 Mk5E M2",
+        "T-55",
+        "Pickup",
+        "Rooikat 120"
+    ],
+    "shots_fired": 2410
+}

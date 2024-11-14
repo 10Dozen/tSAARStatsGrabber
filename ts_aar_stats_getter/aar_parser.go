@@ -3,13 +3,14 @@ package main
 import (
 	"encoding/json"
 	"fmt"
-	"io"
 	"math"
 	"os"
 )
 
 const (
 	START_LEAVE_DISTANCE float64 = 100
+	AAR_CONTENT_PREFIX   string  = "aarFileData = "
+	EXPORT_FILE_SUFFIX           = "stats.json"
 )
 
 type AARStats struct {
@@ -136,20 +137,10 @@ func (u *AARFrameAttack) UnmarshalJSON(buf []byte) error {
 	return nil
 }
 
-func GetAARStats(filename string) {
-	file, err := os.Open(filename)
-	if err != nil {
-		panic(err)
-	}
-
-	content, err := io.ReadAll(file)
-	content = content[len([]byte("aarFileData = ")):]
-	if err != nil {
-		panic(err)
-	}
-
+func ExtractAARStats(filename string, aarContent []byte) {
+	aarContent = aarContent[len([]byte(AAR_CONTENT_PREFIX)):]
 	aar := &AAR{}
-	if err := json.Unmarshal(content, aar); err != nil {
+	if err := json.Unmarshal(aarContent, aar); err != nil {
 		panic(err)
 	}
 
@@ -181,6 +172,19 @@ func GetAARStats(filename string) {
 	fmt.Printf("VehiclesKilled: %#v \n", stats.VehiclesKilled)
 	fmt.Printf("AIKilled: %#v \n", stats.AIKilled)
 	fmt.Printf("ShotsFired: %#v \n", stats.ShotsFired)
+
+	statsContent, err := json.MarshalIndent(stats, "", "    ")
+	if err != nil {
+		panic(err)
+	}
+
+	file, err := os.Create(fmt.Sprintf("%s.%s", filename, EXPORT_FILE_SUFFIX))
+	if err != nil {
+		panic(err)
+	}
+	defer file.Close()
+
+	file.Write(statsContent)
 }
 
 func trackUnits(aar *AAR, stats *AARStats) {

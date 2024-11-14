@@ -8,6 +8,7 @@ import (
 	"io"
 	"net/http"
 	"os"
+	"path/filepath"
 	"regexp"
 	"strings"
 	"time"
@@ -63,10 +64,11 @@ func findReports(filter_by string) (url []string) {
 	return
 }
 
-// Downloads and unzips AAR by given (url)
-func getAAR(url string) {
-	url = GITHUB_PREFIX + url
+// Downloads, unzips and gather stats from AAR by given (url)
+func handleAAR(url string, targetDirname string) {
 
+	// -- Get AAR from remote repo
+	url = GITHUB_PREFIX + url
 	resp, err := http.Get(url)
 	if resp != nil {
 		defer resp.Body.Close()
@@ -79,12 +81,16 @@ func getAAR(url string) {
 	if err != nil {
 		panic(err)
 	}
+	resp.Body.Close()
 
+	// -- Unzip downloaded file
 	zipReader, err := zip.NewReader(bytes.NewReader(body), resp.ContentLength)
 	if err != nil {
 		panic(err)
 	}
 
+	var filename string
+	var unzippedContent []byte
 	for _, file := range zipReader.File {
 		open, err := file.Open()
 		if err != nil {
@@ -92,18 +98,18 @@ func getAAR(url string) {
 		}
 		defer open.Close()
 
-		create, err := os.Create(file.Name)
-		if err != nil {
-			panic(err)
-		}
-		defer create.Close()
-		create.ReadFrom(open)
+		filename = file.Name
+		unzippedContent, err = io.ReadAll(open)
+		open.Close()
 	}
+
+	// -- Retrieve AAR stats from content
+	ExtractAARStats(filepath.Join(targetDirname, filename), unzippedContent)
 
 	return
 }
 
-func worker(idx int, inCh *chan string, ctrlCh *chan int) {
+func worker(idx int, inCh *chan string, ctrlCh *chan int, targetDirname string) {
 	in := *inCh
 	ctrl := *ctrlCh
 	for {
@@ -113,17 +119,17 @@ func worker(idx int, inCh *chan string, ctrlCh *chan int) {
 			close(ctrl)
 			return
 		}
-		getAAR(url)
+		handleAAR(url, targetDirname)
 	}
 }
 
-func downloadAARs(urls []string) {
+func handleAARs(urls []string, dir string) {
 	urlCh := make(chan string, WORKERS)
 	ctrlChannels := make([]chan int, WORKERS)
 	for i := 0; i < WORKERS; i++ {
 		ch := make(chan int)
 		ctrlChannels[i] = ch
-		go worker(i, &urlCh, &ch)
+		go worker(i, &urlCh, &ch, dir)
 	}
 
 	for _, u := range urls {
@@ -138,25 +144,13 @@ func downloadAARs(urls []string) {
 }
 
 func main() {
-	/*
-		filter_substr := promptDateFilter()
-		urls := findReports(filter_substr)
-		if urls == nil {
-			fmt.Printf("ОШИБКА: Не обнаружено AAR для фильтра %s\n", filter_substr)
-		}
+	filter_substr := promptDateFilter()
+	urls := findReports(filter_substr)
+	if urls == nil {
+		fmt.Printf("ОШИБКА: Не обнаружено AAR для фильтра %s\n", filter_substr)
+	}
 
-		downloadAARs(urls)
-		fmt.Println("All done")
-	*/
-
-	//GetAARStats(`AAR.2024-11-05.Mountains_ACR.CO14_Bloody_Dawn.txt`)
-	//GetAARStats(`AAR.2024-11-02.porto.CO20_Paradise_or_Hell_1A.txt`)
-	//GetAARStats(`AAR.2024-11-05.go_map_fjord.CO22_Trojan_Horse.txt`)
-	//GetAARStats(`AAR.2024-11-02.brf_sumava.CO27_Operation_Edelweiss.txt`)
-
-	//GetAARStats(`AAR.2024-11-02.WL_Rosche.CO31_Rebuttal_Letter.txt`)
-	//GetAARStats(`AAR.2024-11-07.Farabad.CO27_Operation_Cou_Noue.txt`)
-	//GetAARStats(`AAR.2024-11-07.tem_vinjesvingenc.CO20_Gas_Station_King.txt`)
-	GetAARStats(`AAR.2024-11-09.WL_Rosche.CO30_Hedgerow_Hell_1A.json`)
-	//GetAARStats(`AAR.2024-11-12.IslaPera.CO22_Morning_Ambush.json`)
+	os.Mkdir(filter_substr, os.ModeAppend)
+	handleAARs(urls, filter_substr)
+	fmt.Println("All done")
 }

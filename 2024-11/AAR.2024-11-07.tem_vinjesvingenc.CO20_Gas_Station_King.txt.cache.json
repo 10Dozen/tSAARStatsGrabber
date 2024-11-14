@@ -1,0 +1,57 @@
+{
+    "mission_name": "CO20 Gas Station King",
+    "terrain": "tem_vinjesvingenc",
+    "mission_time": 2969,
+    "players": [
+        "Arsdor",
+        "Osamich",
+        "Ka6aH",
+        "[HL]Prais777",
+        "TUWONKA",
+        "Twente",
+        "Dushica",
+        "Galaxy",
+        "invaderok",
+        "GRANT",
+        "Михаил"
+    ],
+    "players_deployed": [
+        "Arsdor",
+        "Osamich",
+        "Ka6aH",
+        "[HL]Prais777",
+        "TUWONKA",
+        "Twente",
+        "Dushica",
+        "Galaxy",
+        "invaderok",
+        "GRANT",
+        "TUWONKA",
+        "Galaxy",
+        "Михаил",
+        "Galaxy"
+    ],
+    "players_killed": [
+        "TUWONKA",
+        "Galaxy",
+        "Galaxy",
+        "Михаил",
+        "GRANT",
+        "Galaxy",
+        "TUWONKA",
+        "Osamich",
+        "[HL]Prais777"
+    ],
+    "ai_killed": 75,
+    "vehicles_killed": [
+        "M1151 (FRAG7, m2, M153A1E1 LP)",
+        "RHIB",
+        "M1151 (FRAG7, m2, O-GPK)",
+        "M1151 (FRAG7, m2, O-GPK)",
+        "2S6M Tunguska-M",
+        "LCU Mk.10",
+        "GAZ-233014 Tigr STS (PK)",
+        "M113A3"
+    ],
+    "shots_fired": 2997
+}

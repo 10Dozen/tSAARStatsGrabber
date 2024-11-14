@@ -1,0 +1,37 @@
+{
+    "mission_name": "CO20 Paradise or Hell 1A",
+    "terrain": "porto",
+    "mission_time": 1626,
+    "players": [
+        "Osamich",
+        "chek1",
+        "Михаил",
+        "TUWONKA",
+        "Smoker",
+        "[HL]Prais777",
+        "Chloe"
+    ],
+    "players_deployed": [
+        "Osamich",
+        "chek1",
+        "Михаил",
+        "TUWONKA",
+        "Smoker",
+        "[HL]Prais777",
+        "Chloe",
+        "TUWONKA"
+    ],
+    "players_killed": [
+        "TUWONKA"
+    ],
+    "ai_killed": 26,
+    "vehicles_killed": [
+        "9P129-1M (9M79-1-F)",
+        "Mi-8MT",
+        "Ural",
+        "MH-60S Seahawk (M3M)",
+        "Ural",
+        "PBX"
+    ],
+    "shots_fired": 418
+}

@@ -1,0 +1,59 @@
+{
+    "mission_name": "CO16 Along the Track",
+    "terrain": "ruha",
+    "mission_time": 4883,
+    "players": [
+        "Arsdor",
+        "Osamich",
+        "Dushica",
+        "Smoker",
+        "Galaxy",
+        "Twente",
+        "TUWONKA",
+        "olegg",
+        "Venom_koket",
+        "Михаил",
+        "invaderok",
+        "[HL]Prais777",
+        "Papa Het",
+        "Ka6aH",
+        "Реневал"
+    ],
+    "players_deployed": [
+        "Arsdor",
+        "Osamich",
+        "Dushica",
+        "Smoker",
+        "Galaxy",
+        "Twente",
+        "TUWONKA",
+        "olegg",
+        "Venom_koket",
+        "Михаил",
+        "invaderok",
+        "[HL]Prais777",
+        "Papa Het",
+        "Ka6aH",
+        "Реневал"
+    ],
+    "players_killed": [
+        "Реневал",
+        "olegg"
+    ],
+    "ai_killed": 96,
+    "vehicles_killed": [
+        "KORD",
+        "MT-LB LV",
+        "Land Rover 110 (Transport) Woodland",
+        "RG-31 Nyala M2",
+        "Unimog 416",
+        "M220 TOW",
+        "Land Rover 110 (Transport) Woodland",
+        "BMP-2",
+        "Unimog 416",
+        "MT-LB LV",
+        "MT-LB LV",
+        "MT-LB LV"
+    ],
+    "shots_fired": 3343
+}
