@@ -149,5 +149,14 @@ func main() {
 		fmt.Println("All done")
 	*/
 
-	GetAARStats(`AAR.2024-11-12.ruha.CO16_Along_the_Track.json`)
+	//GetAARStats(`AAR.2024-11-05.Mountains_ACR.CO14_Bloody_Dawn.txt`)
+	//GetAARStats(`AAR.2024-11-02.porto.CO20_Paradise_or_Hell_1A.txt`)
+	//GetAARStats(`AAR.2024-11-05.go_map_fjord.CO22_Trojan_Horse.txt`)
+	//GetAARStats(`AAR.2024-11-02.brf_sumava.CO27_Operation_Edelweiss.txt`)
+
+	//GetAARStats(`AAR.2024-11-02.WL_Rosche.CO31_Rebuttal_Letter.txt`)
+	//GetAARStats(`AAR.2024-11-07.Farabad.CO27_Operation_Cou_Noue.txt`)
+	//GetAARStats(`AAR.2024-11-07.tem_vinjesvingenc.CO20_Gas_Station_King.txt`)
+	GetAARStats(`AAR.2024-11-09.WL_Rosche.CO30_Hedgerow_Hell_1A.json`)
+	//GetAARStats(`AAR.2024-11-12.IslaPera.CO22_Morning_Ambush.json`)
 }
