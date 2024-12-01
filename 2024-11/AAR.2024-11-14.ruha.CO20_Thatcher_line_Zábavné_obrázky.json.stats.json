@@ -1,0 +1,44 @@
+{
+    "mission_name": "CO20_Thatcher_line_Zábavné_obrázky",
+    "terrain": "ruha",
+    "mission_time": 1039,
+    "players": [
+        "Ka6aH",
+        "Galaxy",
+        "Михаил",
+        "Osamich",
+        "TUWONKA",
+        "Comrade",
+        "chek1",
+        "invaderok",
+        "10Dozen",
+        "Реневал"
+    ],
+    "players_deployed": [
+        "Ka6aH",
+        "Galaxy",
+        "Михаил",
+        "Osamich",
+        "TUWONKA",
+        "Comrade",
+        "chek1",
+        "invaderok",
+        "10Dozen",
+        "Реневал",
+        "Михаил"
+    ],
+    "players_killed": [
+        "TUWONKA",
+        "Osamich",
+        "chek1",
+        "invaderok",
+        "Ka6aH",
+        "Михаил",
+        "10Dozen",
+        "Реневал",
+        "Galaxy"
+    ],
+    "ai_killed": 25,
+    "vehicles_killed": [],
+    "shots_fired": 1251
+}

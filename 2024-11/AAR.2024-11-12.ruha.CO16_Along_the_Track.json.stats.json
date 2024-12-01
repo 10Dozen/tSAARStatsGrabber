@@ -42,18 +42,18 @@
     ],
     "ai_killed": 96,
     "vehicles_killed": [
-        "KORD",
         "MT-LB LV",
+        "Land Rover 110 (Transport) Woodland",
+        "MT-LB LV",
+        "MT-LB LV",
+        "M220 TOW",
+        "Unimog 416",
+        "KORD",
         "Land Rover 110 (Transport) Woodland",
         "RG-31 Nyala M2",
         "Unimog 416",
-        "M220 TOW",
-        "Land Rover 110 (Transport) Woodland",
-        "BMP-2",
-        "Unimog 416",
         "MT-LB LV",
-        "MT-LB LV",
-        "MT-LB LV"
+        "BMP-2"
     ],
     "shots_fired": 3343
 }

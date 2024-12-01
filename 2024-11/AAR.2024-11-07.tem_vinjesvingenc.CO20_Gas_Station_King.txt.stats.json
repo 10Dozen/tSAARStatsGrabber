@@ -44,14 +44,14 @@
     ],
     "ai_killed": 75,
     "vehicles_killed": [
-        "M1151 (FRAG7, m2, M153A1E1 LP)",
-        "RHIB",
-        "M1151 (FRAG7, m2, O-GPK)",
-        "M1151 (FRAG7, m2, O-GPK)",
-        "2S6M Tunguska-M",
         "LCU Mk.10",
         "GAZ-233014 Tigr STS (PK)",
-        "M113A3"
+        "M1151 (FRAG7, m2, O-GPK)",
+        "M113A3",
+        "RHIB",
+        "M1151 (FRAG7, m2, M153A1E1 LP)",
+        "2S6M Tunguska-M",
+        "M1151 (FRAG7, m2, O-GPK)"
     ],
     "shots_fired": 2997
 }

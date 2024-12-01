@@ -1,0 +1,54 @@
+{
+    "mission_name": "CO18 Uneven Odds",
+    "terrain": "brf_sumava",
+    "mission_time": 3588,
+    "players": [
+        "Osamich",
+        "Schutze",
+        "Михаил",
+        "Galaxy",
+        "Ka6aH",
+        "Dushica",
+        "Arsdor",
+        "chek1",
+        "10Dozen",
+        "Smoker",
+        "TUWONKA",
+        "Home"
+    ],
+    "players_deployed": [
+        "Osamich",
+        "Schutze",
+        "Михаил",
+        "Galaxy",
+        "Ka6aH",
+        "Dushica",
+        "Arsdor",
+        "chek1",
+        "10Dozen",
+        "Smoker",
+        "TUWONKA",
+        "Home",
+        "Smoker",
+        "TUWONKA",
+        "TUWONKA",
+        "Arsdor",
+        "Home"
+    ],
+    "players_killed": [
+        "Smoker",
+        "TUWONKA",
+        "Ka6aH",
+        "Home",
+        "TUWONKA",
+        "Arsdor"
+    ],
+    "ai_killed": 55,
+    "vehicles_killed": [
+        "GAZ-66 (R-142N)",
+        "UAZ-469",
+        "DShKM",
+        "UAZ-469 (DShKM)"
+    ],
+    "shots_fired": 1954
+}

@@ -1,0 +1,58 @@
+{
+    "mission_name": "CO22 Eastern Connections",
+    "terrain": "Chernarus",
+    "mission_time": 1480,
+    "players": [
+        "10Dozen",
+        "Arsdor",
+        "[HL]Prais777",
+        "chek1"
+    ],
+    "players_deployed": [
+        "10Dozen",
+        "Arsdor",
+        "[HL]Prais777",
+        "chek1",
+        "Arsdor"
+    ],
+    "players_killed": [
+        "Arsdor",
+        "10Dozen",
+        "[HL]Prais777"
+    ],
+    "ai_killed": 6,
+    "vehicles_killed": [
+        "Skoda Octavia",
+        "Golf (Red)",
+        "Datsun 620 Pickup (Covered)",
+        "Ural (Worker)",
+        "Golf (Red)",
+        "Skoda Octavia",
+        "Ural (Worker)",
+        "Golf (Red)",
+        "Datsun 620 Pickup (Covered)",
+        "Ural (Refuel)",
+        "Skoda Octavia",
+        "Datsun 620 Pickup (Covered)",
+        "Škoda 105 L (White)",
+        "Ural (Worker)",
+        "Skoda Octavia",
+        "Golf (Red)",
+        "Škoda 105 L (White)",
+        "Truck Boxer",
+        "Datsun 620 Pickup (Covered)",
+        "Ural (Worker)",
+        "Truck Boxer",
+        "Datsun 620 Pickup (Covered)",
+        "Škoda 105 L (White)",
+        "Datsun 620 Pickup (Covered)",
+        "BTR-60PB",
+        "UAZ-469",
+        "Ural (Worker)",
+        "Škoda 105 L (White)",
+        "Ural (Worker)",
+        "Datsun 620 Pickup (Covered)",
+        "Ural"
+    ],
+    "shots_fired": 322
+}

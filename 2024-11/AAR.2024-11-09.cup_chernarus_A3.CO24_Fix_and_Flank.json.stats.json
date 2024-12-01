@@ -56,20 +56,20 @@
     ],
     "ai_killed": 85,
     "vehicles_killed": [
-        "AGS-30",
-        "BMP-1",
-        "KORD (6U16)",
-        "DShKM",
-        "AGS-30",
-        "UAZ-469",
-        "BTR-80",
-        "T-72",
+        "UAZ-469 (Open)",
         "UAZ-452",
         "BTR-4E1",
-        "Su-25",
         "DShKM (High Tripod)",
+        "DShKM",
+        "UAZ-469",
+        "AGS-30",
+        "Su-25",
+        "AGS-30",
+        "BTR-80",
         "Metis AT-13",
-        "UAZ-469 (Open)"
+        "T-72",
+        "KORD (6U16)",
+        "BMP-1"
     ],
     "shots_fired": 2247
 }

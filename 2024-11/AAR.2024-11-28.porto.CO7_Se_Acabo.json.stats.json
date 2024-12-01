@@ -1,0 +1,32 @@
+{
+    "mission_name": "CO7_Se_Acabo",
+    "terrain": "porto",
+    "mission_time": 1438,
+    "players": [
+        "10Dozen",
+        "[HL]Prais777",
+        "Arsdor",
+        "chek1"
+    ],
+    "players_deployed": [
+        "10Dozen",
+        "[HL]Prais777",
+        "Arsdor",
+        "chek1"
+    ],
+    "players_killed": [],
+    "ai_killed": 24,
+    "vehicles_killed": [
+        "Mini Cooper",
+        "HMMWV M1151 M2",
+        "Mini Cooper",
+        "M113A1",
+        "Lada 1500",
+        "Trabant",
+        "Mini Cooper",
+        "Aml20",
+        "M2 Machine Gun",
+        "M2 Machine Gun"
+    ],
+    "shots_fired": 291
+}

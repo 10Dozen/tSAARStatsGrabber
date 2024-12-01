@@ -1,0 +1,49 @@
+{
+    "mission_name": "COOP_21_TsP V LS",
+    "terrain": "cup_chernarus_A3",
+    "mission_time": 2524,
+    "players": [
+        "Arsdor",
+        "Papa Het",
+        "[HL]Prais777",
+        "Ka6aH",
+        "chek1",
+        "Ulman",
+        "Twente",
+        "TID",
+        "Venom_koket",
+        "александр",
+        "10Dozen"
+    ],
+    "players_deployed": [
+        "Arsdor",
+        "Papa Het",
+        "[HL]Prais777",
+        "Ka6aH",
+        "chek1",
+        "Ulman",
+        "Twente",
+        "TID",
+        "Venom_koket",
+        "Ka6aH",
+        "Arsdor",
+        "chek1",
+        "александр",
+        "10Dozen"
+    ],
+    "players_killed": [
+        "Arsdor",
+        "Ka6aH",
+        "chek1",
+        "александр",
+        "Ulman",
+        "Ka6aH",
+        "Papa Het"
+    ],
+    "ai_killed": 71,
+    "vehicles_killed": [
+        "Lada 1500",
+        "UAZ-469 (DShKM)"
+    ],
+    "shots_fired": 852
+}

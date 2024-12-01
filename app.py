@@ -31,7 +31,7 @@ class AARStats:
         d = self.__dict__.copy()
         d['players'] = list(d['players'])
         return d
-    
+
     @staticmethod
     def deserialize(data):
         return AARStats(**data)
@@ -87,15 +87,15 @@ class LeaderStat:
         self.hq_missions: list[str] = []
         self.sl_missions: list[str] = []
         self.ftl_missions: list[str] = []
-    
+
     def add_as_hq(self, mission: str) -> None:
         self.hq_times += 1
         self.hq_missions.append(mission)
-    
+
     def add_as_sl(self, mission: str) -> None:
         self.sl_times += 1
         self.sl_missions.append(mission)
-        
+
     def add_as_ftl(self, mission: str) -> None:
         self.ftl_times += 1
         self.ftl_missions.append(mission)
@@ -134,17 +134,17 @@ class Exporter:
     ORBAT_HQ_GRID = {
         "title": "HQ Role (by %s)",
         "headers": ('Name', 'Times', '%'),
-        "line":  "  %-20s | %-7s | %-7s"    
+        "line":  "  %-20s | %-7s | %-7s"
     }
     ORBAT_SL_GRID = {
         "title": "Squad Leader Role (by %s)",
         "headers": ('Name', 'Times', '%'),
-        "line":  "  %-20s | %-7s | %-7s"    
+        "line":  "  %-20s | %-7s | %-7s"
     }
     ORBAT_FTL_GRID = {
         "title": "Fireteam Leader Role (by %s)",
         "headers": ('Name', 'Times', '%'),
-        "line":  "  %-20s | %-7s | %-7s"    
+        "line":  "  %-20s | %-7s | %-7s"
     }
 
     def __init__(self, filename="AAR Stats.txt"):
@@ -152,6 +152,7 @@ class Exporter:
         self._raw_lines = []
         self._grid_missions = []
         self._grid_players_partaking = []
+        self._grid_top_players_survive_rate = []
         self._grid_players_survive_rate = []
         self._grid_terrains = []
         self._grid_abandoned_vehicles = []
@@ -159,13 +160,13 @@ class Exporter:
         self._grid_orbat_sl_partaking = []
         self._grid_orbat_ftl_partaking = []
         self._orbat_per_player_stats = []
-    
+
     def __f_grid_title(self, grid, params=tuple()):
         out = getattr(self, grid).get("title") % params
         print()
         print(out)
         return out
-    
+
     def __f_grid_headers(self, grid):
         out = []
         grid_info = getattr(self, grid)
@@ -179,7 +180,7 @@ class Exporter:
         for o in out:
             print(o)
         return out
-    
+
     def __f_grid_line(self, grid, line_data):
         out = getattr(self, grid).get("line") % line_data
         print(out)
@@ -219,15 +220,15 @@ class Exporter:
                     ("Playtime", {"key": lambda x: operator.getitem(x, 'time'), "reverse": True})
                 ],
                 data_set_reader=lambda d: (
-                    d['player'], 
+                    d['player'],
                     d['count'], self.format_percent(d['count_per']),
-                    self.format_time(d['time']), self.format_percent(d['time_per'])
+                    self.format_time(d['time'], True), self.format_percent(d['time_per'])
                 ),
                 data_set=player_partaking_stats.values()
             )
 
     def write_players_survivability_grid(self, per_player_data, top=False):
-        self._grid_players_survive_rate = \
+        grid_data = \
             self.__write_multi_sort_grid(
                 gridname="TOP_PLAYERS_SURVIVE_GRID" if top else "PLAYERS_SURVIVE_GRID",
                 data_set=per_player_data.values(),
@@ -244,6 +245,11 @@ class Exporter:
                     ("Survivability", {"key": operator.attrgetter('survivability'), "reverse": True})
                 ]
             )
+
+        if top:
+            self._grid_top_players_survive_rate = grid_data
+        else:
+            self._grid_players_survive_rate = grid_data
 
     def write_terrain_grid(self, terrains_stats):
         self._grid_terrains = \
@@ -274,7 +280,7 @@ class Exporter:
                 ]
             )
 
-    # -- ORBAT 
+    # -- ORBAT
     def write_orbat_hqs(self, stats: dict[str, dict]):
         self._grid_orbat_hq_partaking = \
         self.__write_multi_sort_grid(
@@ -325,14 +331,14 @@ class Exporter:
         lines.append('Leadership stats:')
         for ps in per_player_data.values():
             lines.append("")
-            lines.append('  %-20s| HQ     | SL     | FTL    ' % ps.name)
+            lines.append('  %-20s| HQ     | SL     | FTL    ' % 'Name')
             lines.append('  ---                 | ---    | ---    | ---')
             lines.append('  %-20s| %-7d| %-7d| %-7d' % (
-                "", ps.hq_times, ps.sl_times, ps.ftl_times
+                ps.name, ps.hq_times, ps.sl_times, ps.ftl_times
             ))
             if ps.hq_missions:
-                lines.append('  Missions as HQ:                %s' % ", ".join(ps.hq_missions))    
-            if ps.sl_missions:        
+                lines.append('  Missions as HQ:                %s' % ", ".join(ps.hq_missions))
+            if ps.sl_missions:
                 lines.append('  Missions as Squad leader:      %s' % ", ".join(ps.sl_missions))
             if ps.ftl_missions:
                 lines.append('  Missions as Fireteam leader:   %s' % ", ".join(ps.ftl_missions))
@@ -355,27 +361,34 @@ class Exporter:
             f.write("\n\n\n")
             f.writelines("\n".join(self._grid_players_partaking))
             f.write("\n\n\n")
+            f.writelines("\n".join(self._grid_top_players_survive_rate))
+            f.write("\n\n\n")
             f.writelines("\n".join(self._grid_players_survive_rate))
             f.write("\n\n\n")
             f.writelines("\n".join(self._grid_abandoned_vehicles))
-            f.write("\n\n\n")            
+            f.write("\n\n\n")
             f.write("ORBAT Stats:\n\n")
             f.write("\n".join(self._grid_orbat_hq_partaking))
-            f.write("\n")            
+            f.write("\n")
             f.write("\n".join(self._grid_orbat_sl_partaking))
-            f.write("\n")            
+            f.write("\n")
             f.write("\n".join(self._grid_orbat_ftl_partaking))
             f.write("\n")
             f.write("\n".join(self._orbat_per_player_stats))
             f.write("\n")
 
     @staticmethod
-    def format_time(time_s):
-        d = datetime(1,1,1) + timedelta(seconds=time_s)
-        if d.day - 1 == 0:
-            return "%d h %d min %d sec" % (d.hour, d.minute, d.second)
-        return "%d day %d h %d min %d sec" % (d.day-1, d.hour, d.minute, d.second)
-    
+    def format_time(time_s, up_to_hours=False):
+        d = datetime(1, 1, 1) + timedelta(seconds=time_s)
+        days = d.day - 1
+        hours = d.hour
+        if up_to_hours:
+            hours += days * 24
+
+        if days == 0 or up_to_hours:
+            return "%d h %d min %d sec" % (hours, d.minute, d.second)
+        return "%d day %d h %d min %d sec" % (days, hours, d.minute, d.second)
+
     @staticmethod
     def format_percent(val):
         return f"{val:.2f}%"
@@ -421,10 +434,10 @@ def read_aars(aar_files: list[Path]):
         total_player_lost += len(aar.players_killed)
 
         terrain = aar.terrain.lower()
-        terrain_name = CONFIG["Terrains"].get(terrain) 
+        terrain_name = CONFIG["Terrains"].get(terrain)
         if not terrain_name:
             raise ValueError(f"Failed to find name for the [{terrain}] terrain")
-            
+
         terrain_stat = terrains_stats.get(terrain, {
             "name": terrain_name.get("name"),
             "count": 0,
@@ -464,7 +477,7 @@ def read_aars(aar_files: list[Path]):
     EXPORTER.write_raw_line(f"  Abandoned/Killed vehicles: {len(total_vehicles_abandoned)}")
     EXPORTER.write_raw_line(f"  Total player losses: {total_player_lost}")
     EXPORTER.write_raw_line(f"  Avg survivability: {100 * (1 - total_player_lost/total_deployed_units):.2f}%")
-    
+
     # -- Mission list
     EXPORTER.write_missions_grid(mission_names)
 
@@ -476,7 +489,7 @@ def read_aars(aar_files: list[Path]):
         part_time_per = get_percent(per_player_data[p].playtime, total_time)
         player_partaking_stats[p] = {
             "player": p,
-            "count": c, 
+            "count": c,
             "time": part_time,
             "count_per": part_percentage,
             "time_per": part_time_per
@@ -547,7 +560,7 @@ def read_orbats(orbat_files: list[Path]):
 
             for leader in orbat.squad_leaders:
                 player_name = leader["Name"]
-               
+
                 squad_leaders.append(player_name)
                 player_stat: LeaderStat = leaders.get(
                     player_name,
@@ -573,7 +586,7 @@ def read_orbats(orbat_files: list[Path]):
         part_percentage = get_percent(c, missions_in_period)
         hq_stats[p] = {
             "player": p,
-            "count": c, 
+            "count": c,
             "count_per": part_percentage
         }
     EXPORTER.write_orbat_hqs(hq_stats)
@@ -583,7 +596,7 @@ def read_orbats(orbat_files: list[Path]):
         part_percentage = get_percent(c, missions_in_period)
         sl_stats[p] = {
             "player": p,
-            "count": c, 
+            "count": c,
             "count_per": part_percentage
         }
     EXPORTER.write_orbat_squad_leaders(sl_stats)
@@ -593,7 +606,7 @@ def read_orbats(orbat_files: list[Path]):
         part_percentage = get_percent(c, missions_in_period)
         tl_stats[p] = {
             "player": p,
-            "count": c, 
+            "count": c,
             "count_per": part_percentage
         }
     EXPORTER.write_orbat_team_leaders(tl_stats)
@@ -626,7 +639,7 @@ def get_files(dir: str) -> list[Path]:
 
 
 def read_config(config_name: str):
-    config_data = None 
+    config_data = None
     with open(config_name, 'r', encoding='utf-8') as f:
         config_data = json.load(f)
     return config_data
@@ -662,13 +675,13 @@ if __name__ == '__main__':
     CONFIG["Terrains"] = terrains
 
     period_substr = promptDateFilter()
-    export_filename = CONFIG['OutputFilenameFormat'] % period_substr  
+    export_filename = CONFIG['OutputFilenameFormat'] % period_substr
     EXPORTER = Exporter(export_filename)
     print("----")
 
     # AAR Stats
-    
-    aar_files = get_files(os.path.join(CONFIG['AARDirectory'], period_substr))    
+
+    aar_files = get_files(os.path.join(CONFIG['AARDirectory'], period_substr))
     if aar_files:
         read_aars(aar_files)
     else:
@@ -681,4 +694,4 @@ if __name__ == '__main__':
 
     EXPORTER.export()
     sys.exit(0)
-    
+

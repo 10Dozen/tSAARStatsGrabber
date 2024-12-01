@@ -1,0 +1,23 @@
+{
+    "mission_name": "BLITZ18 Dusk Party (1C)",
+    "terrain": "Kunduz",
+    "mission_time": 952,
+    "players": [
+        "Arsdor",
+        "chek1",
+        "10Dozen",
+        "[HL]Prais777"
+    ],
+    "players_deployed": [
+        "Arsdor",
+        "chek1",
+        "10Dozen",
+        "[HL]Prais777"
+    ],
+    "players_killed": [],
+    "ai_killed": 19,
+    "vehicles_killed": [
+        "Datsun 620 Pickup (5 seats)"
+    ],
+    "shots_fired": 149
+}

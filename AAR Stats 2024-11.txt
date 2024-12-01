@@ -1,17 +1,17 @@
 Overall data:
-  Total mission time: 47884 sec (13 h 18 min 4 sec)
-  Mission Average play time: 4353 sec (1 h 12 min 33 sec)
-  Number of unique players: 30
+  Total mission time: 109748 sec (1 day 6 h 29 min 8 sec)
+  Mission Average play time: 3784 sec (1 h 3 min 4 sec)
+  Number of unique players: 38
   Max players in one mission: 23
-  Total players deployed: 250
-  Total muntion fired: 40772
-  Total AI killed: 1166
-  Abandoned/Killed vehicles: 209
-  Total player losses: 118
-  Avg survivability: 52.80%
+  Total players deployed: 555
+  Total muntion fired: 85104
+  Total AI killed: 2710
+  Abandoned/Killed vehicles: 418
+  Total player losses: 263
+  Avg survivability: 52.61%
 
 
-Missions (11):
+Missions (29):
   CO27 Operation Edelweiss
   CO20 Paradise or Hell 1A
   CO31 Rebuttal Letter
@@ -23,173 +23,273 @@ Missions (11):
   CO30 Hedgerow Hell 1A
   CO22 Morning Ambush
   CO16 Along the Track
+  CO24 Fix and Flank
+  CO20_Thatcher_line_Zábavné_obrázky
+  CO18 Uneven Odds
+  CO29 Broken Fence
+  CO29 Operation Kaiten (1A)
+  CO22 Foxholes Hoppers 2A
+  CO18 Desperate Business
+  CO20_Thatcher_line_Zábavné_obrázky
+  CO26_Stacja_koncowa
+  CO22 Firepower 1A
+  CO25 Angel Slayer
+  CO18 Soap Opera
+  CO22 Eastern Connections
+  COOP_21_TsP V LS
+  BLITZ18 Dusk Party (1C)
+  CO7_Se_Acabo
+  CO20_Juan_y_Maria
+  CO23 Mission Engage Resentment 2A
 
 
 Terrains (by Events):
   Terrain              | Times   | %       | Playtime             | %      
   ---                  | ---     | ---     | ---                  | ---    
-  Rosche, Germany      | 2       | 18.18%  | 2 h 52 min 23 sec    | 21.60% 
-  Šumava               | 1       | 9.09%   | 0 h 59 min 41 sec    | 7.48%  
-  Porto                | 1       | 9.09%   | 0 h 27 min 6 sec     | 3.40%  
-  Fjord                | 1       | 9.09%   | 1 h 34 min 19 sec    | 11.82% 
-  Takistan Mountains   | 1       | 9.09%   | 0 h 32 min 46 sec    | 4.11%  
-  Farabad              | 1       | 9.09%   | 2 h 9 min 16 sec     | 16.20% 
-  Vinjesvingenc        | 1       | 9.09%   | 0 h 49 min 29 sec    | 6.20%  
-  Chernarus 2020       | 1       | 9.09%   | 0 h 47 min 24 sec    | 5.94%  
-  Isla Pera            | 1       | 9.09%   | 1 h 44 min 17 sec    | 13.07% 
-  Ruha                 | 1       | 9.09%   | 1 h 21 min 23 sec    | 10.20% 
+  Chernarus 2020       | 5       | 17.24%  | 5 h 22 min 9 sec     | 17.61% 
+  Rosche, Germany      | 3       | 10.34%  | 4 h 57 min 32 sec    | 16.27% 
+  Ruha                 | 3       | 10.34%  | 2 h 10 min 11 sec    | 7.12%  
+  Šumava               | 2       | 6.90%   | 1 h 59 min 29 sec    | 6.53%  
+  Porto                | 2       | 6.90%   | 0 h 51 min 4 sec     | 2.79%  
+  Fjord                | 1       | 3.45%   | 1 h 34 min 19 sec    | 5.16%  
+  Takistan Mountains   | 1       | 3.45%   | 0 h 32 min 46 sec    | 1.79%  
+  Farabad              | 1       | 3.45%   | 2 h 9 min 16 sec     | 7.07%  
+  Vinjesvingenc        | 1       | 3.45%   | 0 h 49 min 29 sec    | 2.71%  
+  Isla Pera            | 1       | 3.45%   | 1 h 44 min 17 sec    | 5.70%  
+  Chernarus (Winter)   | 1       | 3.45%   | 1 h 5 min 15 sec     | 3.57%  
+  Lybor                | 1       | 3.45%   | 1 h 11 min 16 sec    | 3.90%  
+  Pecher               | 1       | 3.45%   | 1 h 11 min 9 sec     | 3.89%  
+  Korsac               | 1       | 3.45%   | 1 h 28 min 49 sec    | 4.86%  
+  Takistan             | 1       | 3.45%   | 1 h 21 min 6 sec     | 4.43%  
+  Kujari               | 1       | 3.45%   | 0 h 47 min 5 sec     | 2.57%  
+  Chernarus            | 1       | 3.45%   | 0 h 24 min 40 sec    | 1.35%  
+  Kunduz, Afghanistan  | 1       | 3.45%   | 0 h 15 min 52 sec    | 0.87%  
+  intro                | 1       | 3.45%   | 0 h 33 min 24 sec    | 1.83%  
 
 Terrains (by Playtime):
   Terrain              | Times   | %       | Playtime             | %      
   ---                  | ---     | ---     | ---                  | ---    
-  Rosche, Germany      | 2       | 18.18%  | 2 h 52 min 23 sec    | 21.60% 
-  Farabad              | 1       | 9.09%   | 2 h 9 min 16 sec     | 16.20% 
-  Isla Pera            | 1       | 9.09%   | 1 h 44 min 17 sec    | 13.07% 
-  Fjord                | 1       | 9.09%   | 1 h 34 min 19 sec    | 11.82% 
-  Ruha                 | 1       | 9.09%   | 1 h 21 min 23 sec    | 10.20% 
-  Šumava               | 1       | 9.09%   | 0 h 59 min 41 sec    | 7.48%  
-  Vinjesvingenc        | 1       | 9.09%   | 0 h 49 min 29 sec    | 6.20%  
-  Chernarus 2020       | 1       | 9.09%   | 0 h 47 min 24 sec    | 5.94%  
-  Takistan Mountains   | 1       | 9.09%   | 0 h 32 min 46 sec    | 4.11%  
-  Porto                | 1       | 9.09%   | 0 h 27 min 6 sec     | 3.40%  
+  Chernarus 2020       | 5       | 17.24%  | 5 h 22 min 9 sec     | 17.61% 
+  Rosche, Germany      | 3       | 10.34%  | 4 h 57 min 32 sec    | 16.27% 
+  Ruha                 | 3       | 10.34%  | 2 h 10 min 11 sec    | 7.12%  
+  Farabad              | 1       | 3.45%   | 2 h 9 min 16 sec     | 7.07%  
+  Šumava               | 2       | 6.90%   | 1 h 59 min 29 sec    | 6.53%  
+  Isla Pera            | 1       | 3.45%   | 1 h 44 min 17 sec    | 5.70%  
+  Fjord                | 1       | 3.45%   | 1 h 34 min 19 sec    | 5.16%  
+  Korsac               | 1       | 3.45%   | 1 h 28 min 49 sec    | 4.86%  
+  Takistan             | 1       | 3.45%   | 1 h 21 min 6 sec     | 4.43%  
+  Lybor                | 1       | 3.45%   | 1 h 11 min 16 sec    | 3.90%  
+  Pecher               | 1       | 3.45%   | 1 h 11 min 9 sec     | 3.89%  
+  Chernarus (Winter)   | 1       | 3.45%   | 1 h 5 min 15 sec     | 3.57%  
+  Porto                | 2       | 6.90%   | 0 h 51 min 4 sec     | 2.79%  
+  Vinjesvingenc        | 1       | 3.45%   | 0 h 49 min 29 sec    | 2.71%  
+  Kujari               | 1       | 3.45%   | 0 h 47 min 5 sec     | 2.57%  
+  intro                | 1       | 3.45%   | 0 h 33 min 24 sec    | 1.83%  
+  Takistan Mountains   | 1       | 3.45%   | 0 h 32 min 46 sec    | 1.79%  
+  Chernarus            | 1       | 3.45%   | 0 h 24 min 40 sec    | 1.35%  
+  Kunduz, Afghanistan  | 1       | 3.45%   | 0 h 15 min 52 sec    | 0.87%  
 
 
 
 Players (partaking, by Events visited):
   Name                 | Events  | %       | Playtime             | %      
   ---                  | ---     | ---     | ---                  | ---    
-  [HL]Prais777         | 11      | 100.00% | 13 h 18 min 4 sec    | 100.00%
-  Михаил               | 10      | 90.91%  | 11 h 43 min 45 sec   | 88.18% 
-  Galaxy               | 10      | 90.91%  | 12 h 50 min 58 sec   | 96.60% 
-  Smoker               | 9       | 81.82%  | 11 h 41 min 11 sec   | 87.86% 
-  TUWONKA              | 9       | 81.82%  | 11 h 10 min 59 sec   | 84.08% 
-  Osamich              | 9       | 81.82%  | 10 h 47 min 17 sec   | 81.11% 
-  Arsdor               | 9       | 81.82%  | 12 h 18 min 12 sec   | 92.50% 
-  invaderok            | 8       | 72.73%  | 10 h 20 min 11 sec   | 77.71% 
-  chek1                | 8       | 72.73%  | 10 h 34 min 26 sec   | 79.50% 
-  Twente               | 8       | 72.73%  | 10 h 43 min 53 sec   | 80.68% 
-  Dushica              | 8       | 72.73%  | 10 h 20 min 11 sec   | 77.71% 
-  Papa Het             | 7       | 63.64%  | 9 h 19 min 27 sec    | 70.10% 
-  Ka6aH                | 7       | 63.64%  | 9 h 44 min 12 sec    | 73.20% 
-  Venom_koket          | 7       | 63.64%  | 9 h 52 min 48 sec    | 74.28% 
-  [SK]Stepaz           | 5       | 45.45%  | 6 h 13 min 47 sec    | 46.84% 
-  Chloe                | 5       | 45.45%  | 5 h 6 min 34 sec     | 38.41% 
-  Comrade              | 5       | 45.45%  | 7 h 36 min 33 sec    | 57.21% 
-  olegg                | 5       | 45.45%  | 6 h 45 min 27 sec    | 50.80% 
-  Ulman                | 4       | 36.36%  | 6 h 2 min 14 sec     | 45.39% 
-  SammySweet           | 4       | 36.36%  | 4 h 15 min 46 sec    | 32.05% 
-  Home                 | 4       | 36.36%  | 5 h 39 min 44 sec    | 42.57% 
-  Реневал              | 4       | 36.36%  | 5 h 36 min 27 sec    | 42.16% 
-  FILISTIN             | 3       | 27.27%  | 3 h 52 min 4 sec     | 29.08% 
-  Dreges               | 3       | 27.27%  | 3 h 30 min 28 sec    | 26.37% 
-  Mango                | 3       | 27.27%  | 3 h 30 min 28 sec    | 26.37% 
-  Seven                | 3       | 27.27%  | 3 h 30 min 28 sec    | 26.37% 
-  GRANT                | 3       | 27.27%  | 4 h 33 min 4 sec     | 34.22% 
-  Schutze              | 2       | 18.18%  | 2 h 8 min 41 sec     | 16.12% 
-  Anton 2              | 2       | 18.18%  | 2 h 30 min 47 sec    | 18.89% 
-  Redid Stretch        | 2       | 18.18%  | 2 h 30 min 47 sec    | 18.89% 
+  [HL]Prais777         | 25      | 86.21%  | 26 h 31 min 50 sec   | 87.03% 
+  chek1                | 24      | 82.76%  | 26 h 40 min 37 sec   | 87.51% 
+  Arsdor               | 24      | 82.76%  | 27 h 23 min 55 sec   | 89.87% 
+  TUWONKA              | 22      | 75.86%  | 26 h 4 min 0 sec     | 85.50% 
+  Galaxy               | 21      | 72.41%  | 25 h 59 min 26 sec   | 85.26% 
+  Ka6aH                | 21      | 72.41%  | 24 h 39 min 37 sec   | 80.89% 
+  Михаил               | 19      | 65.52%  | 20 h 33 min 11 sec   | 67.42% 
+  Smoker               | 18      | 62.07%  | 22 h 27 min 58 sec   | 73.69% 
+  invaderok            | 18      | 62.07%  | 21 h 45 min 35 sec   | 71.38% 
+  Osamich              | 18      | 62.07%  | 21 h 42 min 10 sec   | 71.19% 
+  Venom_koket          | 17      | 58.62%  | 21 h 30 min 35 sec   | 70.56% 
+  Twente               | 14      | 48.28%  | 18 h 1 min 1 sec     | 59.10% 
+  Dushica              | 14      | 48.28%  | 17 h 39 min 55 sec   | 57.95% 
+  Реневал              | 14      | 48.28%  | 17 h 7 min 52 sec    | 56.19% 
+  Papa Het             | 13      | 44.83%  | 15 h 28 min 46 sec   | 50.78% 
+  Ulman                | 11      | 37.93%  | 13 h 56 min 26 sec   | 45.73% 
+  10Dozen              | 11      | 37.93%  | 8 h 39 min 7 sec     | 28.38% 
+  Home                 | 10      | 34.48%  | 12 h 37 min 13 sec   | 41.40% 
+  Comrade              | 9       | 31.03%  | 13 h 2 min 46 sec    | 42.79% 
+  Schutze              | 8       | 27.59%  | 9 h 6 min 10 sec     | 29.86% 
+  TID                  | 8       | 27.59%  | 8 h 59 min 27 sec    | 29.49% 
+  [SK]Stepaz           | 6       | 20.69%  | 7 h 0 min 52 sec     | 23.01% 
+  SammySweet           | 6       | 20.69%  | 6 h 55 min 44 sec    | 22.73% 
+  Chloe                | 5       | 17.24%  | 5 h 6 min 34 sec     | 16.76% 
+  olegg                | 5       | 17.24%  | 6 h 45 min 27 sec    | 22.17% 
+  александр            | 5       | 17.24%  | 4 h 42 min 34 sec    | 15.45% 
+  Barich               | 4       | 13.79%  | 4 h 48 min 9 sec     | 15.75% 
+  FILISTIN             | 3       | 10.34%  | 3 h 52 min 4 sec     | 12.69% 
+  Dreges               | 3       | 10.34%  | 3 h 30 min 28 sec    | 11.51% 
+  Mango                | 3       | 10.34%  | 3 h 30 min 28 sec    | 11.51% 
+  Seven                | 3       | 10.34%  | 3 h 30 min 28 sec    | 11.51% 
+  GRANT                | 3       | 10.34%  | 4 h 33 min 4 sec     | 14.93% 
+  Duke epta            | 3       | 10.34%  | 2 h 49 min 14 sec    | 9.25%  
+  STAVR                | 3       | 10.34%  | 3 h 56 min 31 sec    | 12.93% 
+  Anton 2              | 2       | 6.90%   | 2 h 30 min 47 sec    | 8.24%  
+  Redid Stretch        | 2       | 6.90%   | 2 h 30 min 47 sec    | 8.24%  
+  lim                  | 2       | 6.90%   | 2 h 38 min 33 sec    | 8.67%  
+  DarkCote             | 1       | 3.45%   | 1 h 28 min 49 sec    | 4.86%  
 
 Players (partaking, by Playtime):
   Name                 | Events  | %       | Playtime             | %      
   ---                  | ---     | ---     | ---                  | ---    
-  [HL]Prais777         | 11      | 100.00% | 13 h 18 min 4 sec    | 100.00%
-  Galaxy               | 10      | 90.91%  | 12 h 50 min 58 sec   | 96.60% 
-  Arsdor               | 9       | 81.82%  | 12 h 18 min 12 sec   | 92.50% 
-  Михаил               | 10      | 90.91%  | 11 h 43 min 45 sec   | 88.18% 
-  Smoker               | 9       | 81.82%  | 11 h 41 min 11 sec   | 87.86% 
-  TUWONKA              | 9       | 81.82%  | 11 h 10 min 59 sec   | 84.08% 
-  Osamich              | 9       | 81.82%  | 10 h 47 min 17 sec   | 81.11% 
-  Twente               | 8       | 72.73%  | 10 h 43 min 53 sec   | 80.68% 
-  chek1                | 8       | 72.73%  | 10 h 34 min 26 sec   | 79.50% 
-  invaderok            | 8       | 72.73%  | 10 h 20 min 11 sec   | 77.71% 
-  Dushica              | 8       | 72.73%  | 10 h 20 min 11 sec   | 77.71% 
-  Venom_koket          | 7       | 63.64%  | 9 h 52 min 48 sec    | 74.28% 
-  Ka6aH                | 7       | 63.64%  | 9 h 44 min 12 sec    | 73.20% 
-  Papa Het             | 7       | 63.64%  | 9 h 19 min 27 sec    | 70.10% 
-  Comrade              | 5       | 45.45%  | 7 h 36 min 33 sec    | 57.21% 
-  olegg                | 5       | 45.45%  | 6 h 45 min 27 sec    | 50.80% 
-  [SK]Stepaz           | 5       | 45.45%  | 6 h 13 min 47 sec    | 46.84% 
-  Ulman                | 4       | 36.36%  | 6 h 2 min 14 sec     | 45.39% 
-  Home                 | 4       | 36.36%  | 5 h 39 min 44 sec    | 42.57% 
-  Реневал              | 4       | 36.36%  | 5 h 36 min 27 sec    | 42.16% 
-  Chloe                | 5       | 45.45%  | 5 h 6 min 34 sec     | 38.41% 
-  GRANT                | 3       | 27.27%  | 4 h 33 min 4 sec     | 34.22% 
-  SammySweet           | 4       | 36.36%  | 4 h 15 min 46 sec    | 32.05% 
-  FILISTIN             | 3       | 27.27%  | 3 h 52 min 4 sec     | 29.08% 
-  Dreges               | 3       | 27.27%  | 3 h 30 min 28 sec    | 26.37% 
-  Mango                | 3       | 27.27%  | 3 h 30 min 28 sec    | 26.37% 
-  Seven                | 3       | 27.27%  | 3 h 30 min 28 sec    | 26.37% 
-  Anton 2              | 2       | 18.18%  | 2 h 30 min 47 sec    | 18.89% 
-  Redid Stretch        | 2       | 18.18%  | 2 h 30 min 47 sec    | 18.89% 
-  Schutze              | 2       | 18.18%  | 2 h 8 min 41 sec     | 16.12% 
+  Arsdor               | 24      | 82.76%  | 27 h 23 min 55 sec   | 89.87% 
+  chek1                | 24      | 82.76%  | 26 h 40 min 37 sec   | 87.51% 
+  [HL]Prais777         | 25      | 86.21%  | 26 h 31 min 50 sec   | 87.03% 
+  TUWONKA              | 22      | 75.86%  | 26 h 4 min 0 sec     | 85.50% 
+  Galaxy               | 21      | 72.41%  | 25 h 59 min 26 sec   | 85.26% 
+  Ka6aH                | 21      | 72.41%  | 24 h 39 min 37 sec   | 80.89% 
+  Smoker               | 18      | 62.07%  | 22 h 27 min 58 sec   | 73.69% 
+  invaderok            | 18      | 62.07%  | 21 h 45 min 35 sec   | 71.38% 
+  Osamich              | 18      | 62.07%  | 21 h 42 min 10 sec   | 71.19% 
+  Venom_koket          | 17      | 58.62%  | 21 h 30 min 35 sec   | 70.56% 
+  Михаил               | 19      | 65.52%  | 20 h 33 min 11 sec   | 67.42% 
+  Twente               | 14      | 48.28%  | 18 h 1 min 1 sec     | 59.10% 
+  Dushica              | 14      | 48.28%  | 17 h 39 min 55 sec   | 57.95% 
+  Реневал              | 14      | 48.28%  | 17 h 7 min 52 sec    | 56.19% 
+  Papa Het             | 13      | 44.83%  | 15 h 28 min 46 sec   | 50.78% 
+  Ulman                | 11      | 37.93%  | 13 h 56 min 26 sec   | 45.73% 
+  Comrade              | 9       | 31.03%  | 13 h 2 min 46 sec    | 42.79% 
+  Home                 | 10      | 34.48%  | 12 h 37 min 13 sec   | 41.40% 
+  Schutze              | 8       | 27.59%  | 9 h 6 min 10 sec     | 29.86% 
+  TID                  | 8       | 27.59%  | 8 h 59 min 27 sec    | 29.49% 
+  10Dozen              | 11      | 37.93%  | 8 h 39 min 7 sec     | 28.38% 
+  [SK]Stepaz           | 6       | 20.69%  | 7 h 0 min 52 sec     | 23.01% 
+  SammySweet           | 6       | 20.69%  | 6 h 55 min 44 sec    | 22.73% 
+  olegg                | 5       | 17.24%  | 6 h 45 min 27 sec    | 22.17% 
+  Chloe                | 5       | 17.24%  | 5 h 6 min 34 sec     | 16.76% 
+  Barich               | 4       | 13.79%  | 4 h 48 min 9 sec     | 15.75% 
+  александр            | 5       | 17.24%  | 4 h 42 min 34 sec    | 15.45% 
+  GRANT                | 3       | 10.34%  | 4 h 33 min 4 sec     | 14.93% 
+  STAVR                | 3       | 10.34%  | 3 h 56 min 31 sec    | 12.93% 
+  FILISTIN             | 3       | 10.34%  | 3 h 52 min 4 sec     | 12.69% 
+  Dreges               | 3       | 10.34%  | 3 h 30 min 28 sec    | 11.51% 
+  Mango                | 3       | 10.34%  | 3 h 30 min 28 sec    | 11.51% 
+  Seven                | 3       | 10.34%  | 3 h 30 min 28 sec    | 11.51% 
+  Duke epta            | 3       | 10.34%  | 2 h 49 min 14 sec    | 9.25%  
+  lim                  | 2       | 6.90%   | 2 h 38 min 33 sec    | 8.67%  
+  Anton 2              | 2       | 6.90%   | 2 h 30 min 47 sec    | 8.24%  
+  Redid Stretch        | 2       | 6.90%   | 2 h 30 min 47 sec    | 8.24%  
+  DarkCote             | 1       | 3.45%   | 1 h 28 min 49 sec    | 4.86%  
+
+
+
+Most-participating Players (survivability rate,  by Max Deaths):
+  Name                 | Deaths  | %       | Deploys | %       | Survivability  
+  ---                  | ---     | ---     | ---     | ---     | ---            
+  TUWONKA              | 19      | 7.22%   | 35      | 6.31%   | 45.71%         
+  Smoker               | 17      | 6.46%   | 29      | 5.23%   | 41.38%         
+  Arsdor               | 16      | 6.08%   | 35      | 6.31%   | 54.29%         
+  chek1                | 15      | 5.70%   | 30      | 5.41%   | 50.00%         
+  Galaxy               | 15      | 5.70%   | 29      | 5.23%   | 48.28%         
+  Ka6aH                | 13      | 4.94%   | 27      | 4.86%   | 51.85%         
+  invaderok            | 13      | 4.94%   | 26      | 4.68%   | 50.00%         
+  [HL]Prais777         | 11      | 4.18%   | 31      | 5.59%   | 64.52%         
+  Venom_koket          | 11      | 4.18%   | 25      | 4.50%   | 56.00%         
+  Osamich              | 10      | 3.80%   | 26      | 4.68%   | 61.54%         
+  Михаил               | 9       | 3.78%   | 24      | 4.86%   | 62.50%         
+
+Most-participating Players (survivability rate,  by Survivability):
+  Name                 | Deaths  | %       | Deploys | %       | Survivability  
+  ---                  | ---     | ---     | ---     | ---     | ---            
+  [HL]Prais777         | 11      | 4.18%   | 31      | 5.59%   | 64.52%         
+  Михаил               | 9       | 3.78%   | 24      | 4.86%   | 62.50%         
+  Osamich              | 10      | 3.80%   | 26      | 4.68%   | 61.54%         
+  Venom_koket          | 11      | 4.18%   | 25      | 4.50%   | 56.00%         
+  Arsdor               | 16      | 6.08%   | 35      | 6.31%   | 54.29%         
+  Ka6aH                | 13      | 4.94%   | 27      | 4.86%   | 51.85%         
+  chek1                | 15      | 5.70%   | 30      | 5.41%   | 50.00%         
+  invaderok            | 13      | 4.94%   | 26      | 4.68%   | 50.00%         
+  Galaxy               | 15      | 5.70%   | 29      | 5.23%   | 48.28%         
+  TUWONKA              | 19      | 7.22%   | 35      | 6.31%   | 45.71%         
+  Smoker               | 17      | 6.46%   | 29      | 5.23%   | 41.38%         
 
 
 
 Players (survivability rate, by Max Deaths):
   Name                 | Deaths  | %       | Deploys | %       | Survivability  
   ---                  | ---     | ---     | ---     | ---     | ---            
-  Smoker               | 10      | 8.47%   | 17      | 6.80%   | 41.18%         
-  invaderok            | 8       | 6.78%   | 13      | 5.20%   | 38.46%         
-  Galaxy               | 7       | 5.93%   | 14      | 5.60%   | 50.00%         
-  Papa Het             | 7       | 5.93%   | 10      | 4.00%   | 30.00%         
-  Arsdor               | 7       | 5.93%   | 14      | 5.60%   | 50.00%         
-  TUWONKA              | 6       | 5.08%   | 13      | 5.20%   | 53.85%         
-  [HL]Prais777         | 5       | 4.24%   | 14      | 5.60%   | 64.29%         
+  TUWONKA              | 19      | 7.22%   | 35      | 6.31%   | 45.71%         
+  Smoker               | 17      | 6.46%   | 29      | 5.23%   | 41.38%         
+  Arsdor               | 16      | 6.08%   | 35      | 6.31%   | 54.29%         
+  Galaxy               | 15      | 5.70%   | 29      | 5.23%   | 48.28%         
+  chek1                | 15      | 5.70%   | 30      | 5.41%   | 50.00%         
+  invaderok            | 13      | 4.94%   | 26      | 4.68%   | 50.00%         
+  Ulman                | 13      | 5.24%   | 19      | 3.70%   | 31.58%         
+  Ka6aH                | 13      | 4.94%   | 27      | 4.86%   | 51.85%         
+  [HL]Prais777         | 11      | 4.18%   | 31      | 5.59%   | 64.52%         
+  Venom_koket          | 11      | 4.18%   | 25      | 4.50%   | 56.00%         
+  Osamich              | 10      | 3.80%   | 26      | 4.68%   | 61.54%         
+  Реневал              | 10      | 3.80%   | 17      | 3.06%   | 41.18%         
+  Papa Het             | 9       | 3.63%   | 17      | 3.31%   | 47.06%         
+  Михаил               | 9       | 3.78%   | 24      | 4.86%   | 62.50%         
+  Home                 | 9       | 4.33%   | 18      | 3.99%   | 50.00%         
+  Dushica              | 7       | 2.66%   | 18      | 3.24%   | 61.11%         
+  Twente               | 7       | 2.66%   | 19      | 3.42%   | 63.16%         
+  TID                  | 7       | 2.82%   | 13      | 2.53%   | 46.15%         
+  10Dozen              | 6       | 2.42%   | 15      | 2.88%   | 60.00%         
   Dreges               | 5       | 5.38%   | 8       | 3.92%   | 37.50%         
-  chek1                | 5       | 4.31%   | 10      | 4.26%   | 50.00%         
-  Osamich              | 5       | 4.24%   | 13      | 5.20%   | 61.54%         
-  Михаил               | 5       | 4.24%   | 12      | 4.80%   | 58.33%         
   olegg                | 5       | 4.24%   | 8       | 3.20%   | 37.50%         
-  Twente               | 4       | 3.39%   | 11      | 4.40%   | 63.64%         
-  Ulman                | 4       | 3.45%   | 7       | 2.98%   | 42.86%         
-  Home                 | 4       | 4.30%   | 8       | 3.92%   | 50.00%         
+  Schutze              | 4       | 1.92%   | 11      | 2.44%   | 63.64%         
   GRANT                | 4       | 5.56%   | 5       | 3.38%   | 20.00%         
-  Venom_koket          | 4       | 3.39%   | 9       | 3.60%   | 55.56%         
-  Dushica              | 3       | 2.54%   | 10      | 4.00%   | 70.00%         
-  Mango                | 3       | 3.23%   | 4       | 1.96%   | 25.00%         
   FILISTIN             | 3       | 3.23%   | 5       | 2.45%   | 40.00%         
-  Реневал              | 3       | 2.54%   | 5       | 2.00%   | 40.00%         
-  Chloe                | 2       | 2.15%   | 7       | 3.43%   | 71.43%         
-  [SK]Stepaz           | 2       | 2.15%   | 5       | 2.45%   | 60.00%         
+  Comrade              | 3       | 1.14%   | 10      | 1.80%   | 70.00%         
+  Mango                | 3       | 3.23%   | 4       | 1.96%   | 25.00%         
+  Barich               | 3       | 1.26%   | 6       | 1.21%   | 50.00%         
   Seven                | 2       | 2.15%   | 4       | 1.96%   | 50.00%         
-  Ka6aH                | 2       | 1.69%   | 8       | 3.20%   | 75.00%         
-  SammySweet           | 1       | 1.85%   | 4       | 3.67%   | 75.00%         
-  Comrade              | 1       | 0.86%   | 6       | 2.55%   | 83.33%         
+  SammySweet           | 2       | 0.96%   | 7       | 1.55%   | 71.43%         
+  [SK]Stepaz           | 2       | 0.84%   | 6       | 1.21%   | 66.67%         
+  Chloe                | 2       | 2.15%   | 7       | 3.43%   | 71.43%         
+  Duke epta            | 2       | 1.08%   | 4       | 1.01%   | 50.00%         
+  александр            | 2       | 0.81%   | 5       | 0.97%   | 60.00%         
+  STAVR                | 2       | 0.96%   | 4       | 0.89%   | 50.00%         
   Anton 2              | 1       | 1.08%   | 2       | 0.98%   | 50.00%         
-  Schutze              | 0       | 0.00%   | 2       | 2.74%   | 100.00%        
+  lim                  | 1       | 0.38%   | 3       | 0.54%   | 66.67%         
   Redid Stretch        | 0       | 0.00%   | 2       | 0.98%   | 100.00%        
+  DarkCote             | 0       | 0.00%   | 1       | 0.22%   | 100.00%        
 
 Players (survivability rate, by Survivability):
   Name                 | Deaths  | %       | Deploys | %       | Survivability  
   ---                  | ---     | ---     | ---     | ---     | ---            
-  Schutze              | 0       | 0.00%   | 2       | 2.74%   | 100.00%        
   Redid Stretch        | 0       | 0.00%   | 2       | 0.98%   | 100.00%        
-  Comrade              | 1       | 0.86%   | 6       | 2.55%   | 83.33%         
-  SammySweet           | 1       | 1.85%   | 4       | 3.67%   | 75.00%         
-  Ka6aH                | 2       | 1.69%   | 8       | 3.20%   | 75.00%         
+  DarkCote             | 0       | 0.00%   | 1       | 0.22%   | 100.00%        
+  SammySweet           | 2       | 0.96%   | 7       | 1.55%   | 71.43%         
   Chloe                | 2       | 2.15%   | 7       | 3.43%   | 71.43%         
-  Dushica              | 3       | 2.54%   | 10      | 4.00%   | 70.00%         
-  [HL]Prais777         | 5       | 4.24%   | 14      | 5.60%   | 64.29%         
-  Twente               | 4       | 3.39%   | 11      | 4.40%   | 63.64%         
-  Osamich              | 5       | 4.24%   | 13      | 5.20%   | 61.54%         
-  [SK]Stepaz           | 2       | 2.15%   | 5       | 2.45%   | 60.00%         
-  Михаил               | 5       | 4.24%   | 12      | 4.80%   | 58.33%         
-  Venom_koket          | 4       | 3.39%   | 9       | 3.60%   | 55.56%         
-  TUWONKA              | 6       | 5.08%   | 13      | 5.20%   | 53.85%         
-  chek1                | 5       | 4.31%   | 10      | 4.26%   | 50.00%         
-  Galaxy               | 7       | 5.93%   | 14      | 5.60%   | 50.00%         
-  Home                 | 4       | 4.30%   | 8       | 3.92%   | 50.00%         
-  Arsdor               | 7       | 5.93%   | 14      | 5.60%   | 50.00%         
+  Comrade              | 3       | 1.14%   | 10      | 1.80%   | 70.00%         
+  [SK]Stepaz           | 2       | 0.84%   | 6       | 1.21%   | 66.67%         
+  lim                  | 1       | 0.38%   | 3       | 0.54%   | 66.67%         
+  [HL]Prais777         | 11      | 4.18%   | 31      | 5.59%   | 64.52%         
+  Schutze              | 4       | 1.92%   | 11      | 2.44%   | 63.64%         
+  Twente               | 7       | 2.66%   | 19      | 3.42%   | 63.16%         
+  Михаил               | 9       | 3.78%   | 24      | 4.86%   | 62.50%         
+  Osamich              | 10      | 3.80%   | 26      | 4.68%   | 61.54%         
+  Dushica              | 7       | 2.66%   | 18      | 3.24%   | 61.11%         
+  10Dozen              | 6       | 2.42%   | 15      | 2.88%   | 60.00%         
+  александр            | 2       | 0.81%   | 5       | 0.97%   | 60.00%         
+  Venom_koket          | 11      | 4.18%   | 25      | 4.50%   | 56.00%         
+  Arsdor               | 16      | 6.08%   | 35      | 6.31%   | 54.29%         
+  Ka6aH                | 13      | 4.94%   | 27      | 4.86%   | 51.85%         
   Seven                | 2       | 2.15%   | 4       | 1.96%   | 50.00%         
+  invaderok            | 13      | 4.94%   | 26      | 4.68%   | 50.00%         
+  chek1                | 15      | 5.70%   | 30      | 5.41%   | 50.00%         
+  Home                 | 9       | 4.33%   | 18      | 3.99%   | 50.00%         
   Anton 2              | 1       | 1.08%   | 2       | 0.98%   | 50.00%         
-  Ulman                | 4       | 3.45%   | 7       | 2.98%   | 42.86%         
-  Smoker               | 10      | 8.47%   | 17      | 6.80%   | 41.18%         
+  Duke epta            | 2       | 1.08%   | 4       | 1.01%   | 50.00%         
+  STAVR                | 2       | 0.96%   | 4       | 0.89%   | 50.00%         
+  Barich               | 3       | 1.26%   | 6       | 1.21%   | 50.00%         
+  Galaxy               | 15      | 5.70%   | 29      | 5.23%   | 48.28%         
+  Papa Het             | 9       | 3.63%   | 17      | 3.31%   | 47.06%         
+  TID                  | 7       | 2.82%   | 13      | 2.53%   | 46.15%         
+  TUWONKA              | 19      | 7.22%   | 35      | 6.31%   | 45.71%         
+  Smoker               | 17      | 6.46%   | 29      | 5.23%   | 41.38%         
+  Реневал              | 10      | 3.80%   | 17      | 3.06%   | 41.18%         
   FILISTIN             | 3       | 3.23%   | 5       | 2.45%   | 40.00%         
-  Реневал              | 3       | 2.54%   | 5       | 2.00%   | 40.00%         
-  invaderok            | 8       | 6.78%   | 13      | 5.20%   | 38.46%         
   Dreges               | 5       | 5.38%   | 8       | 3.92%   | 37.50%         
   olegg                | 5       | 4.24%   | 8       | 3.20%   | 37.50%         
-  Papa Het             | 7       | 5.93%   | 10      | 4.00%   | 30.00%         
+  Ulman                | 13      | 5.24%   | 19      | 3.70%   | 31.58%         
   Mango                | 3       | 3.23%   | 4       | 1.96%   | 25.00%         
   GRANT                | 4       | 5.56%   | 5       | 3.38%   | 20.00%         
 
@@ -198,106 +298,184 @@ Players (survivability rate, by Survivability):
 Abandoned/Killed vehicles:
   Vehicle                                            | Count   | %      
   ---                                                | ---     | ---    
-  M113A1                                             | 10      | 4.78%  
-  DShKM                                              | 8       | 3.83%  
-  BTR-60PB                                           | 7       | 3.35%  
-  Steerable Parachute                                | 6       | 2.87%  
-  M151A2 (M2)                                        | 6       | 2.87%  
-  Podnos 2B14 Mortar                                 | 6       | 2.87%  
-  BTR-80                                             | 5       | 2.39%  
-  MT-LB LV                                           | 5       | 2.39%  
-  Pickup                                             | 5       | 2.39%  
-  BTR-80A (Green)                                    | 5       | 2.39%  
-  M252                                               | 4       | 1.91%  
-  Ural                                               | 4       | 1.91%  
-  M252 81mm Mortar                                   | 4       | 1.91%  
-  AGS-30                                             | 4       | 1.91%  
-  Fuchs 1A4 Infantry-Milan (Woodland)                | 4       | 1.91%  
-  M151A2                                             | 4       | 1.91%  
-  Dingo 2 (MG) (Woodland)                            | 3       | 1.44%  
-  Unimog 416                                         | 3       | 1.44%  
-  Landrover 109                                      | 3       | 1.44%  
-  BMP-2                                              | 3       | 1.44%  
-  Leopard 1A3 (Snow Leopard)                         | 3       | 1.44%  
-  UAZ-452                                            | 3       | 1.44%  
-  T-55                                               | 3       | 1.44%  
-  VAB Ultima Top (TDF)                               | 3       | 1.44%  
-  BMP-1                                              | 3       | 1.44%  
-  VAB Ultima (TDF)                                   | 3       | 1.44%  
-  GAZ-233114 Tigr-M (PK/Camo)                        | 3       | 1.44%  
-  Marder 1A5 (Woodland)                              | 3       | 1.44%  
-  T-64BV                                             | 2       | 0.96%  
-  UAZ-469 (AGS-30)                                   | 2       | 0.96%  
-  UAZ-469                                            | 2       | 0.96%  
-  BRDM-2                                             | 2       | 0.96%  
-  PVP - Pl80 (TDF)                                   | 2       | 0.96%  
-  AMX-10 RCR (TDF)                                   | 2       | 0.96%  
-  UAZ-469 (Open)                                     | 2       | 0.96%  
-  M1151 (FRAG7, m2, O-GPK)                           | 2       | 0.96%  
-  BTR-80 (Camo)                                      | 2       | 0.96%  
-  Fennek (Woodland)                                  | 2       | 0.96%  
-  GAZ-66 (Ammo)                                      | 2       | 0.96%  
-  ZU-23-2                                            | 2       | 0.96%  
-  GAZ-66                                             | 2       | 0.96%  
-  Land Rover 110 (Transport) Woodland                | 2       | 0.96%  
-  Unimog 416 Medic                                   | 1       | 0.48%  
-  M1036 (M220/TOW)                                   | 1       | 0.48%  
-  Badger IFV                                         | 1       | 0.48%  
-  Dingo 2 (GL) (Woodland)                            | 1       | 0.48%  
-  GTK Boxer (HMG)                                    | 1       | 0.48%  
-  SA-330 Puma HC2                                    | 1       | 0.48%  
-  GTK Boxer (GMG)                                    | 1       | 0.48%  
-  MTVR                                               | 1       | 0.48%  
-  9P129-1M (9M79-1-F)                                | 1       | 0.48%  
-  Mi-8MT                                             | 1       | 0.48%  
-  MH-60S Seahawk (M3M)                               | 1       | 0.48%  
-  PBX                                                | 1       | 0.48%  
-  Leopard 1 (Green)                                  | 1       | 0.48%  
-  DShKM (Low Tripod)                                 | 1       | 0.48%  
-  M577 HQ                                            | 1       | 0.48%  
-  Ural-4320 Open                                     | 1       | 0.48%  
-  Milan                                              | 1       | 0.48%  
-  SPG-9                                              | 1       | 0.48%  
-  Ural-4320                                          | 1       | 0.48%  
-  MK19 Minitripod                                    | 1       | 0.48%  
-  Škoda Rapid                                        | 1       | 0.48%  
-  M2 Machine Gun                                     | 1       | 0.48%  
-  M151 (M2)                                          | 1       | 0.48%  
-  UAZ-452 MedEvac                                    | 1       | 0.48%  
-  M151                                               | 1       | 0.48%  
-  OH-58D (M2/FFAR)                                   | 1       | 0.48%  
-  M2 Minitripod                                      | 1       | 0.48%  
-  RG-31 Mk5E M2                                      | 1       | 0.48%  
-  Rooikat 120                                        | 1       | 0.48%  
-  BTR-40 (DSHKM)                                     | 1       | 0.48%  
-  DSHkM Minitripod                                   | 1       | 0.48%  
-  BMP-1P                                             | 1       | 0.48%  
-  Praga V3S (Covered)                                | 1       | 0.48%  
-  GAZ-66 (R-142N)                                    | 1       | 0.48%  
-  BTR-40 (Unarmed)                                   | 1       | 0.48%  
-  EF-2000                                            | 1       | 0.48%  
-  T-55AMV                                            | 1       | 0.48%  
-  M1151 (FRAG7, m2, M153A1E1 LP)                     | 1       | 0.48%  
-  RHIB                                               | 1       | 0.48%  
-  2S6M Tunguska-M                                    | 1       | 0.48%  
-  LCU Mk.10                                          | 1       | 0.48%  
-  GAZ-233014 Tigr STS (PK)                           | 1       | 0.48%  
-  M113A3                                             | 1       | 0.48%  
-  KORD (6U16)                                        | 1       | 0.48%  
-  T-72                                               | 1       | 0.48%  
-  BTR-4E1                                            | 1       | 0.48%  
-  Su-25                                              | 1       | 0.48%  
-  DShKM (High Tripod)                                | 1       | 0.48%  
-  Metis AT-13                                        | 1       | 0.48%  
-  UAZ-469 (SPG-9)                                    | 1       | 0.48%  
-  BMP-2 Ambulance                                    | 1       | 0.48%  
-  BTR-80 (Green)                                     | 1       | 0.48%  
-  Hilux                                              | 1       | 0.48%  
-  SPG-9M                                             | 1       | 0.48%  
-  GAZ-66 (Open)                                      | 1       | 0.48%  
-  KORD                                               | 1       | 0.48%  
-  RG-31 Nyala M2                                     | 1       | 0.48%  
-  M220 TOW                                           | 1       | 0.48%  
+  M113A1                                             | 13      | 3.11%  
+  DShKM                                              | 10      | 2.39%  
+  BTR-60PB                                           | 8       | 1.91%  
+  AGS-30                                             | 8       | 1.91%  
+  UAZ-469 (DShKM)                                    | 8       | 1.91%  
+  Ural                                               | 7       | 1.67%  
+  MT-LB LV                                           | 7       | 1.67%  
+  Datsun 620 Pickup (Covered)                        | 7       | 1.67%  
+  Steerable Parachute                                | 6       | 1.44%  
+  BTR-80                                             | 6       | 1.44%  
+  M151A2 (M2)                                        | 6       | 1.44%  
+  Podnos 2B14 Mortar                                 | 6       | 1.44%  
+  BMP-1                                              | 6       | 1.44%  
+  UAZ-469                                            | 6       | 1.44%  
+  UAZ-469 (Open)                                     | 6       | 1.44%  
+  Fuchs 1A4 Infantry-Milan (Woodland)                | 6       | 1.44%  
+  Ural (Worker)                                      | 6       | 1.44%  
+  BMP-2                                              | 5       | 1.20%  
+  UAZ-452                                            | 5       | 1.20%  
+  Pickup                                             | 5       | 1.20%  
+  BTR-80A (Green)                                    | 5       | 1.20%  
+  Hilux                                              | 5       | 1.20%  
+  M252                                               | 4       | 0.96%  
+  Mi-8MT                                             | 4       | 0.96%  
+  SPG-9                                              | 4       | 0.96%  
+  M252 81mm Mortar                                   | 4       | 0.96%  
+  M2 Minitripod                                      | 4       | 0.96%  
+  T-55                                               | 4       | 0.96%  
+  M151A2                                             | 4       | 0.96%  
+  BMP-1D                                             | 4       | 0.96%  
+  Skoda Octavia                                      | 4       | 0.96%  
+  Golf (Red)                                         | 4       | 0.96%  
+  Škoda 105 L (White)                                | 4       | 0.96%  
+  M939                                               | 4       | 0.96%  
+  Dingo 2 (MG) (Woodland)                            | 3       | 0.72%  
+  Unimog 416                                         | 3       | 0.72%  
+  Landrover 109                                      | 3       | 0.72%  
+  M151                                               | 3       | 0.72%  
+  Leopard 1A3 (Snow Leopard)                         | 3       | 0.72%  
+  M2 Machine Gun                                     | 3       | 0.72%  
+  VAB Ultima (TDF)                                   | 3       | 0.72%  
+  VAB Ultima Top (TDF)                               | 3       | 0.72%  
+  RHIB                                               | 3       | 0.72%  
+  DShKM (High Tripod)                                | 3       | 0.72%  
+  GAZ-233114 Tigr-M (PK/Camo)                        | 3       | 0.72%  
+  Marder 1A5 (Woodland)                              | 3       | 0.72%  
+  GAZ-66                                             | 3       | 0.72%  
+  GAZ-233114 Tigr-M                                  | 3       | 0.72%  
+  FV432 Bulldog L7A2 [Woodland]                      | 3       | 0.72%  
+  BTR-80A                                            | 3       | 0.72%  
+  BTR-60PB (Green)                                   | 3       | 0.72%  
+  M1025 RECON SOV (M2)                               | 3       | 0.72%  
+  AR-2 Darter                                        | 3       | 0.72%  
+  Hilux Full Armor Mode                              | 3       | 0.72%  
+  Mini Cooper                                        | 3       | 0.72%  
+  T-64BV                                             | 2       | 0.48%  
+  GAZ-66 (R-142N)                                    | 2       | 0.48%  
+  AMX-10 RCR (TDF)                                   | 2       | 0.48%  
+  BRDM-2                                             | 2       | 0.48%  
+  PVP - Pl80 (TDF)                                   | 2       | 0.48%  
+  DSHkM Minitripod                                   | 2       | 0.48%  
+  UAZ-469 (AGS-30)                                   | 2       | 0.48%  
+  M1151 (FRAG7, m2, O-GPK)                           | 2       | 0.48%  
+  BTR-4E1                                            | 2       | 0.48%  
+  Metis AT-13                                        | 2       | 0.48%  
+  T-72                                               | 2       | 0.48%  
+  BMP-2 Ambulance                                    | 2       | 0.48%  
+  Fennek (Woodland)                                  | 2       | 0.48%  
+  BTR-80 (Green)                                     | 2       | 0.48%  
+  BTR-80 (Camo)                                      | 2       | 0.48%  
+  ZU-23-2                                            | 2       | 0.48%  
+  GAZ-66 (Ammo)                                      | 2       | 0.48%  
+  Land Rover 110 (Transport) Woodland                | 2       | 0.48%  
+  NSV (High Tripod)                                  | 2       | 0.48%  
+  Ural (Refuel)                                      | 2       | 0.48%  
+  BMD-1P                                             | 2       | 0.48%  
+  FV-720 Odyniec                                     | 2       | 0.48%  
+  GAZ-233114 Tigr-M (PK)                             | 2       | 0.48%  
+  Praga V3S                                          | 2       | 0.48%  
+  Reconnaissance Tank 2A2 Luchs (Woodland)           | 2       | 0.48%  
+  Tayran AR-2                                        | 2       | 0.48%  
+  BTR-80A (Camo)                                     | 2       | 0.48%  
+  VBMR-L (CE)                                        | 2       | 0.48%  
+  T-72B (obr. 1984g.)                                | 2       | 0.48%  
+  Hilux Armored (DShKM)                              | 2       | 0.48%  
+  M41A4 TOW                                          | 2       | 0.48%  
+  Hilux (Tan)                                        | 2       | 0.48%  
+  GAZ-233014 Tigr STS                                | 2       | 0.48%  
+  Truck Boxer                                        | 2       | 0.48%  
+  Lada 1500                                          | 2       | 0.48%  
+  Datsun 620 Pickup (PK)                             | 2       | 0.48%  
+  HMMWV Transport                                    | 2       | 0.48%  
+  GTK Boxer (HMG)                                    | 1       | 0.24%  
+  Dingo 2 (GL) (Woodland)                            | 1       | 0.24%  
+  MTVR                                               | 1       | 0.24%  
+  GTK Boxer (GMG)                                    | 1       | 0.24%  
+  SA-330 Puma HC2                                    | 1       | 0.24%  
+  M1036 (M220/TOW)                                   | 1       | 0.24%  
+  Badger IFV                                         | 1       | 0.24%  
+  Unimog 416 Medic                                   | 1       | 0.24%  
+  PBX                                                | 1       | 0.24%  
+  MH-60S Seahawk (M3M)                               | 1       | 0.24%  
+  9P129-1M (9M79-1-F)                                | 1       | 0.24%  
+  Ural-4320                                          | 1       | 0.24%  
+  Ural-4320 Open                                     | 1       | 0.24%  
+  Milan                                              | 1       | 0.24%  
+  M577 HQ                                            | 1       | 0.24%  
+  Leopard 1 (Green)                                  | 1       | 0.24%  
+  DShKM (Low Tripod)                                 | 1       | 0.24%  
+  MK19 Minitripod                                    | 1       | 0.24%  
+  M151 (M2)                                          | 1       | 0.24%  
+  OH-58D (M2/FFAR)                                   | 1       | 0.24%  
+  Škoda Rapid                                        | 1       | 0.24%  
+  UAZ-452 MedEvac                                    | 1       | 0.24%  
+  Rooikat 120                                        | 1       | 0.24%  
+  RG-31 Mk5E M2                                      | 1       | 0.24%  
+  T-55AMV                                            | 1       | 0.24%  
+  BMP-1P                                             | 1       | 0.24%  
+  BTR-40 (Unarmed)                                   | 1       | 0.24%  
+  Praga V3S (Covered)                                | 1       | 0.24%  
+  BTR-40 (DSHKM)                                     | 1       | 0.24%  
+  EF-2000                                            | 1       | 0.24%  
+  LCU Mk.10                                          | 1       | 0.24%  
+  GAZ-233014 Tigr STS (PK)                           | 1       | 0.24%  
+  M113A3                                             | 1       | 0.24%  
+  M1151 (FRAG7, m2, M153A1E1 LP)                     | 1       | 0.24%  
+  2S6M Tunguska-M                                    | 1       | 0.24%  
+  Su-25                                              | 1       | 0.24%  
+  KORD (6U16)                                        | 1       | 0.24%  
+  SPG-9M                                             | 1       | 0.24%  
+  UAZ-469 (SPG-9)                                    | 1       | 0.24%  
+  GAZ-66 (Open)                                      | 1       | 0.24%  
+  M220 TOW                                           | 1       | 0.24%  
+  KORD                                               | 1       | 0.24%  
+  RG-31 Nyala M2                                     | 1       | 0.24%  
+  Ural (ZU-23)                                       | 1       | 0.24%  
+  ZSU-23-4                                           | 1       | 0.24%  
+  T-64BM Bulat                                       | 1       | 0.24%  
+  BM-21                                              | 1       | 0.24%  
+  Ridgeback PPV LMG Woodland                         | 1       | 0.24%  
+  L111A1 Minitripod                                  | 1       | 0.24%  
+  GAZ-233114 Tigr-M (KORD/Camo)                      | 1       | 0.24%  
+  Mastiff PPV HMG Woodland                           | 1       | 0.24%  
+  KamAZ-5350 (Ammo)                                  | 1       | 0.24%  
+  Fuchs 1A4 Medic (Woodland)                         | 1       | 0.24%  
+  M119                                               | 1       | 0.24%  
+  Hilux (DShKM)                                      | 1       | 0.24%  
+  Mi-24D                                             | 1       | 0.24%  
+  M1097A2 (4D/Half)                                  | 1       | 0.24%  
+  Offroad                                            | 1       | 0.24%  
+  Offroad (HMG)                                      | 1       | 0.24%  
+  FV510 Warrior (SLAT - Woodland)                    | 1       | 0.24%  
+  MG3 - AI (Tripod)                                  | 1       | 0.24%  
+  M1097A2 (2D/Open)                                  | 1       | 0.24%  
+  Zamak Transport                                    | 1       | 0.24%  
+  M2 HMG .50 (Raised)                                | 1       | 0.24%  
+  M1167 (TOW-2)                                      | 1       | 0.24%  
+  Hilux Armored (SPG-9)                              | 1       | 0.24%  
+  Hilux (SPG-9)                                      | 1       | 0.24%  
+  Quad Bike                                          | 1       | 0.24%  
+  M220 TOW-2                                         | 1       | 0.24%  
+  AL-6 Pelican                                       | 1       | 0.24%  
+  Hilux (M2)                                         | 1       | 0.24%  
+  GAZ-233014 (Camo)                                  | 1       | 0.24%  
+  Datsun 620 Pickup (5 seats)                        | 1       | 0.24%  
+  HMMWV M1151 M2                                     | 1       | 0.24%  
+  Trabant                                            | 1       | 0.24%  
+  Aml20                                              | 1       | 0.24%  
+  An-12BP (Аэрофлот)                                 | 1       | 0.24%  
+  C-47 Skytrain                                      | 1       | 0.24%  
+  Assault Boat                                       | 1       | 0.24%  
+  M1025 (Unarmed)                                    | 1       | 0.24%  
+  HMMWV Avenger                                      | 1       | 0.24%  
+  M939 Ammo                                          | 1       | 0.24%  
+  HMMWV (M2)                                         | 1       | 0.24%  
+  M109A6                                             | 1       | 0.24%  
+  M47 Super-Dragon                                   | 1       | 0.24%  
+  M1025 (M2)                                         | 1       | 0.24%  
 
 
 
@@ -306,41 +484,48 @@ ORBAT Stats:
 HQ Role (by Events)
   Name                 | Times   | %      
   ---                  | ---     | ---    
-  TheMajor             | 2       | 100.00%
+  Venom_koket          | 1       | 100.00%
 
 Squad Leader Role (by Events)
   Name                 | Times   | %      
   ---                  | ---     | ---    
-  Nic3                 | 2       | 100.00%
+  Papa Het             | 1       | 100.00%
+  Ulman                | 1       | 100.00%
 
 Fireteam Leader Role (by Events)
   Name                 | Times   | %      
   ---                  | ---     | ---    
-  Nickname1[kek]       | 2       | 100.00%
-  Nickname2            | 2       | 100.00%
+  chek1                | 1       | 100.00%
+  Twente               | 1       | 100.00%
 
 Leadership stats:
 
-  TheMajor            | HQ     | SL     | FTL    
+  Name                | HQ     | SL     | FTL    
   ---                 | ---    | ---    | ---
-                      | 2      | 0      | 0      
-  Missions as HQ:                CO16 Western, CO22 Eastern
+  Venom_koket         | 1      | 0      | 0      
+  Missions as HQ:                CO18 Desperate Business
 
 
-  Nic3                | HQ     | SL     | FTL    
+  Name                | HQ     | SL     | FTL    
   ---                 | ---    | ---    | ---
-                      | 0      | 2      | 0      
-  Missions as Squad leader:      CO16 Western, CO22 Eastern
+  Papa Het            | 0      | 1      | 0      
+  Missions as Squad leader:      CO18 Desperate Business
 
 
-  Nickname1[kek]      | HQ     | SL     | FTL    
+  Name                | HQ     | SL     | FTL    
   ---                 | ---    | ---    | ---
-                      | 0      | 0      | 2      
-  Missions as Fireteam leader:   CO16 Western, CO22 Eastern
+  Ulman               | 0      | 1      | 0      
+  Missions as Squad leader:      CO18 Desperate Business
 
 
-  Nickname2           | HQ     | SL     | FTL    
+  Name                | HQ     | SL     | FTL    
   ---                 | ---    | ---    | ---
-                      | 0      | 0      | 2      
-  Missions as Fireteam leader:   CO16 Western, CO22 Eastern
+  chek1               | 0      | 0      | 1      
+  Missions as Fireteam leader:   CO18 Desperate Business
+
+
+  Name                | HQ     | SL     | FTL    
+  ---                 | ---    | ---    | ---
+  Twente              | 0      | 0      | 1      
+  Missions as Fireteam leader:   CO18 Desperate Business
 

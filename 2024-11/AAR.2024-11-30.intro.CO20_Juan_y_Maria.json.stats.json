@@ -1,0 +1,47 @@
+{
+    "mission_name": "CO20_Juan_y_Maria",
+    "terrain": "intro",
+    "mission_time": 2004,
+    "players": [
+        "Venom_koket",
+        "Реневал",
+        "Dushica",
+        "[HL]Prais777",
+        "Twente",
+        "TUWONKA",
+        "invaderok",
+        "lim",
+        "Smoker",
+        "Arsdor",
+        "Ka6aH"
+    ],
+    "players_deployed": [
+        "Venom_koket",
+        "Реневал",
+        "Dushica",
+        "[HL]Prais777",
+        "Twente",
+        "TUWONKA",
+        "invaderok",
+        "lim",
+        "Smoker",
+        "Arsdor",
+        "Ka6aH"
+    ],
+    "players_killed": [
+        "Ka6aH",
+        "Реневал",
+        "Smoker"
+    ],
+    "ai_killed": 43,
+    "vehicles_killed": [
+        "An-12BP (Аэрофлот)",
+        "RHIB",
+        "RHIB",
+        "C-47 Skytrain",
+        "Datsun 620 Pickup (PK)",
+        "Assault Boat",
+        "Datsun 620 Pickup (PK)"
+    ],
+    "shots_fired": 1007
+}

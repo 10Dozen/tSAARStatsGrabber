@@ -1,0 +1,29 @@
+{
+    "mission_name": "CO20_Thatcher_line_Zábavné_obrázky",
+    "terrain": "ruha",
+    "mission_time": 1889,
+    "players": [
+        "Ka6aH",
+        "[HL]Prais777",
+        "Duke epta",
+        "10Dozen",
+        "Михаил",
+        "александр"
+    ],
+    "players_deployed": [
+        "Ka6aH",
+        "[HL]Prais777",
+        "Duke epta",
+        "10Dozen",
+        "Михаил",
+        "александр"
+    ],
+    "players_killed": [
+        "[HL]Prais777"
+    ],
+    "ai_killed": 54,
+    "vehicles_killed": [
+        "FV510 Warrior (SLAT - Woodland)"
+    ],
+    "shots_fired": 1251
+}

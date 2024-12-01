@@ -43,11 +43,11 @@
     "ai_killed": 40,
     "vehicles_killed": [
         "Pickup",
-        "Pickup",
-        "RG-31 Mk5E M2",
+        "Rooikat 120",
         "T-55",
         "Pickup",
-        "Rooikat 120"
+        "Pickup",
+        "RG-31 Mk5E M2"
     ],
     "shots_fired": 2410
 }

@@ -26,12 +26,12 @@
     ],
     "ai_killed": 26,
     "vehicles_killed": [
-        "9P129-1M (9M79-1-F)",
-        "Mi-8MT",
-        "Ural",
+        "PBX",
         "MH-60S Seahawk (M3M)",
         "Ural",
-        "PBX"
+        "Ural",
+        "Mi-8MT",
+        "9P129-1M (9M79-1-F)"
     ],
     "shots_fired": 418
 }

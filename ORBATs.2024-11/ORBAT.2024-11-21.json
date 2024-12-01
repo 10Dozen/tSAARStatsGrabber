@@ -1,0 +1,125 @@
+[
+    {
+        "Mission": "CO18 Desperate Business",
+        "Leaders": {
+            "HQ": [
+                {
+                    "Group": "Alpha 1-1",
+                    "Role": "Platoon Leader",
+                    "Name": "Venom_koket"
+                }
+            ],
+            "SquadLeaders": [
+                {
+                    "Group": "Alpha 1-1",
+                    "Role": "Section Leader",
+                    "Name": "Papa Het"
+                },
+                {
+                    "Group": "Альфа 1-5",
+                    "Role": "Section Leader",
+                    "Name": "Ulman"
+                }
+            ],
+            "TeamLeaders": [
+                {
+                    "Group": "Alpha 1-1",
+                    "Role": "BLUE - 2IC",
+                    "Name": "chek1"
+                },
+                {
+                    "Group": "Альфа 1-5",
+                    "Role": "Heavy Grenadier",
+                    "Name": "Twente"
+                }
+            ]
+        },
+        "Sides": [
+            {
+                "Name": "WEST",
+                "Groups": [
+                    {
+                        "Name": "Alpha 1-1",
+                        "Units": [
+                            {
+                                "Role": "Rifleman",
+                                "Rank": "PRIVATE",
+                                "Name": "Ka6aH"
+                            },
+                            {
+                                "Role": "BLUE - 2IC",
+                                "Rank": "CORPORAL",
+                                "Name": "chek1"
+                            },
+                            {
+                                "Role": "Grenadier",
+                                "Rank": "PRIVATE",
+                                "Name": "10Dozen"
+                            },
+                            {
+                                "Role": "Automatic Rifleman",
+                                "Rank": "PRIVATE",
+                                "Name": "[HL]Prais777"
+                            },
+                            {
+                                "Role": "Platoon Leader",
+                                "Rank": "LIEUTENANT",
+                                "Name": "Venom_koket"
+                            },
+                            {
+                                "Role": "Automatic Rifleman",
+                                "Rank": "PRIVATE",
+                                "Name": "Михаил"
+                            },
+                            {
+                                "Role": "Section Leader",
+                                "Rank": "SERGEANT",
+                                "Name": "Papa Het"
+                            },
+                            {
+                                "Role": "Grenadier",
+                                "Rank": "PRIVATE",
+                                "Name": "Duke epta"
+                            }
+                        ]
+                    },
+                    {
+                        "Name": "Альфа 1-5",
+                        "Units": [
+                            {
+                                "Role": "Asst. Machinegunner",
+                                "Rank": "PRIVATE",
+                                "Name": "TUWONKA"
+                            },
+                            {
+                                "Role": "Heavy Grenadier",
+                                "Rank": "CORPORAL",
+                                "Name": "Twente"
+                            },
+                            {
+                                "Role": "Section Leader",
+                                "Rank": "SERGEANT",
+                                "Name": "Ulman"
+                            },
+                            {
+                                "Role": "Heavy Grenadier",
+                                "Rank": "PRIVATE",
+                                "Name": "TID"
+                            },
+                            {
+                                "Role": "Machinegunner",
+                                "Rank": "PRIVATE",
+                                "Name": "STAVR"
+                            },
+                            {
+                                "Role": "Sniper",
+                                "Rank": "PRIVATE",
+                                "Name": "Galaxy"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]

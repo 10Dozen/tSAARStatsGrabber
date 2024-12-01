@@ -162,16 +162,17 @@ func ExtractAARStats(filename string, aarContent []byte) {
 	}
 
 	trackUnits(aar, stats)
-
-	fmt.Printf("MissionName: %#v \n", stats.MissionName)
-	fmt.Printf("Terrain: %#v \n", stats.Terrain)
-	fmt.Printf("MisstionTime: %#v \n", stats.MisstionTime)
-	fmt.Printf("Players: %#v \n", stats.Players)
-	fmt.Printf("PlayersDeployed: %#v \n", stats.PlayersDeployed)
-	fmt.Printf("PlayersKilled: %#v \n", stats.PlayersKilled)
-	fmt.Printf("VehiclesKilled: %#v \n", stats.VehiclesKilled)
-	fmt.Printf("AIKilled: %#v \n", stats.AIKilled)
-	fmt.Printf("ShotsFired: %#v \n", stats.ShotsFired)
+	/*
+		fmt.Printf("MissionName: %#v \n", stats.MissionName)
+		fmt.Printf("Terrain: %#v \n", stats.Terrain)
+		fmt.Printf("MisstionTime: %#v \n", stats.MisstionTime)
+		fmt.Printf("Players: %#v \n", stats.Players)
+		fmt.Printf("PlayersDeployed: %#v \n", stats.PlayersDeployed)
+		fmt.Printf("PlayersKilled: %#v \n", stats.PlayersKilled)
+		fmt.Printf("VehiclesKilled: %#v \n", stats.VehiclesKilled)
+		fmt.Printf("AIKilled: %#v \n", stats.AIKilled)
+		fmt.Printf("ShotsFired: %#v \n", stats.ShotsFired)
+	*/
 
 	statsContent, err := json.MarshalIndent(stats, "", "    ")
 	if err != nil {
@@ -279,7 +280,7 @@ func trackUnits(aar *AAR, stats *AARStats) {
 			//    If player is dead, but didn't leaved init pos -- it might by a disconnection issues (or GSO killed in base, but whatever).
 			//    Otherwise - register player death.
 			if !trackedUnit.InitPosLeft {
-				fmt.Println("Player is killed but not moved yet - not count as killed: ", trackedUnit.Name)
+				// fmt.Println("Player is killed but not moved yet - not count as killed: ", trackedUnit.Name)
 				count, ok := nonConfirmedDeadPlayers[trackedUnit.Name]
 				if !ok {
 					count = 0
@@ -330,7 +331,7 @@ func trackUnits(aar *AAR, stats *AARStats) {
 			continue
 		}
 
-		fmt.Println("Player is dead but not moved - not count as deployed: ", p.Name)
+		// fmt.Println("Player is dead but not moved - not count as deployed: ", p.Name)
 		nonConfirmedDeadPlayers[p.Name] = count - 1
 	}
 

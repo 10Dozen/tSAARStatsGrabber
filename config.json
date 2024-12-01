@@ -1,6 +1,6 @@
 {
-    "AARDirectory": "C:\\Users\\XXX\\Documents\\GitHub\\tSAARStatsGrabber",
-    "ORBATDirectory": "C:\\Users\\XXX\\Documents\\GitHub\\tSAARStatsGrabber\\ORBATs.2024-11",
+    "AARDirectory": "G:\\GitRepos\\tSAARStatsGrabber",
+    "ORBATDirectory": "G:\\GitRepos\\tSAARStatsGrabber\\ORBATs.2024-11",
     "OutputFilenameFormat": "AAR Stats %s.txt",
 
     "Terrains": {

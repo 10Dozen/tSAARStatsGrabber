@@ -27,7 +27,7 @@ const (
 func promptDateFilter() (date_filter string) {
 	today := time.Now()
 	year := today.Year()
-	month := int(today.Month())
+	month := int(today.Month()) - 1
 
 	fmt.Printf("Год (%d): ", year)
 	fmt.Scanf("%d\n", &year)
@@ -48,7 +48,7 @@ func findReports(filter_by string) (url []string) {
 		panic(err)
 	}
 
-	fmt.Println(filter_by)
+	//fmt.Println(filter_by)
 	filter_regexp := regexp.MustCompile(AAR_LINK_PATTERN)
 	scanner := bufio.NewScanner(resp.Body)
 	for scanner.Scan() {
